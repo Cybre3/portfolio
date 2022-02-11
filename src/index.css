@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
 
 body {
   margin: 0;
@@ -28,17 +28,16 @@ code {
   justify-content: space-evenly;
   margin: 0 auto;
   position: relative;
-  
 }
 
 .intro {
-  /* font-family: 'Gideon Roman', cursive; */
+  font-family: 'Gideon Roman', cursive;
   /* font-family: 'Permanent Marker', cursive; */
   /* font-family: 'Ubuntu Mono', monospace; */
-  font-family: 'Caveat', cursive;
+  /* font-family: "Caveat", cursive; */
 }
 
-.intro h3{
+.intro h3 {
   background-color: white;
   border-radius: 30px;
   color: black;
@@ -49,6 +48,42 @@ code {
   bottom: -10px;
 }
 
+.nav {
+  align-items: center;
+  background-color: goldenrod;
+  border-bottom: 0.2vh solid white;
+  display: flex;
+  padding: 1vw;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.navicon {
+  align-items: center;
+  display: flex;
+  border-radius: 20px;
+  color: navy;
+  font-family: "Gideon Roman", cursive;
+  padding: 8px 25px;
+  font-size: larger;
+}
+
+.navicon img {
+  border-radius: 8px;
+}
+
+.navlinks {
+  float: right;
+  margin-left: auto;
+  margin-right: 8vw;
+}
+
+.navlinks a {
+  color: white;
+  padding: 0 1vw;
+}
 
 .resumeButton {
   background-color: goldenrod;
