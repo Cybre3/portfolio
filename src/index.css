@@ -31,10 +31,10 @@ code {
 }
 
 .intro {
-  /* font-family: 'Gideon Roman', cursive; */
+  font-family: 'Gideon Roman', cursive;
   /* font-family: 'Permanent Marker', cursive; */
   /* font-family: 'Ubuntu Mono', monospace; */
-  font-family: "Caveat", cursive;
+  /* font-family: "Caveat", cursive; */
 }
 
 .intro h3 {
@@ -51,7 +51,7 @@ code {
 .nav {
   align-items: center;
   background-color: goldenrod;
-  border-bottom: 1px solid white;
+  border-bottom: 0.2vh solid white;
   display: flex;
   padding: 1vw;
 }
@@ -65,9 +65,13 @@ code {
   display: flex;
   border-radius: 20px;
   color: navy;
-  font-family: cursive;
+  font-family: "Gideon Roman", cursive;
   padding: 8px 25px;
   font-size: larger;
+}
+
+.navicon img {
+  border-radius: 8px;
 }
 
 .navlinks {
