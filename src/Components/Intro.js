@@ -10,7 +10,7 @@ function Intro(props) {
           I am <u className="underline">Star</u>rika McCloud
         </h1>
         <div className="typical">
-          <h2>
+          <h3>
             {" "}
             <Typical
               loop={Infinity}
@@ -25,7 +25,7 @@ function Intro(props) {
                 2000,
               ]}
             />
-          </h2>
+          </h3>
         </div>
       </div>
       <div className="introBlock">
@@ -36,9 +36,9 @@ function Intro(props) {
           Download Resume
         </a>
       </div>
-      <h3>
-        <i style={{fontFamily: "Caveat, cursive"}}>Thank you for visiting my page</i>
-       </h3>
+      <p>
+        <i className="thankyou" style={{fontFamily: "Caveat, cursive"}}>Thank you for visiting my page</i>
+       </p>
     </div>
   );
 }

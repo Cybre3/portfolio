@@ -57,7 +57,7 @@ code {
   margin-left: 50px;
 }
 
-.intro h3 {
+.thankyou {
   background-color: white;
   border-radius: 30px;
   color: black;
@@ -65,7 +65,7 @@ code {
   padding: 5px 15px;
   position: absolute;
   right: 10px;
-  bottom: -10px;
+  bottom: 5px;
 }
 
 .nav {
