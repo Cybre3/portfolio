@@ -94,6 +94,11 @@ code {
   border-radius: 8px;
 }
 
+.navicon:hover {
+  text-decoration: none;
+  color: navy;
+}
+
 .navlinks {
   float: right;
   margin-left: auto;
@@ -105,12 +110,22 @@ code {
   padding: 0 1vw;
 }
 
+.navlinks a:hover {
+  color: navy;
+}
+
 .resumeButton {
   background-color: goldenrod;
   border-radius: 10px;
   color: white;
   margin: 1vw;
   padding: 15px;
+  text-decoration: none;
+}
+
+.resumeButton:hover {
+  background-color: darkslategrey;
+  color: white;
   text-decoration: none;
 }
 

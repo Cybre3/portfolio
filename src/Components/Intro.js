@@ -30,10 +30,10 @@ function Intro(props) {
       </div>
       <div className="introBlock">
         <a href="#/" className="resumeButton">
-          See My Resume
+          View Resume
         </a>
         <a href="#/" className="resumeButton">
-          Download my Resume
+          Download Resume
         </a>
       </div>
       <h3>
