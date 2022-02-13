@@ -30,11 +30,11 @@ function CardCodeChallenge(props) {
         <img src={props.image} className="codeChalImg" alt={props.projectTitle} />
 
         {/* <h5 className="card-title">Card title</h5> */}
-        <p className="card-text">{props.projectTitle}</p>
-        <a href={props.projectLink} className="btn btn-primary float-start">
+        <p className="card-text mb-2 mt-2">{props.projectTitle}</p>
+        <a href={props.projectLink} className="btn btn-warning text-light float-start mb-2 mt-3">
           {props.button1}
         </a>
-        <a href={props.githubCode} className="btn btn-primary float-end">
+        <a href={props.githubCode} className="btn btn-warning text-light float-end">
           {props.button2}
         </a>
       </div>

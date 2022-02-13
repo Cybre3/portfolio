@@ -6,7 +6,7 @@ function Intro(props) {
     <div className="intro">
       <div className="introBlock">
         <h1>Hello, </h1>
-        <h1>
+        <h1 className="mb-4">
           I am <u className="underline">Star</u>rika McCloud
         </h1>
         <div className="typical">

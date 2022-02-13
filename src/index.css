@@ -17,19 +17,21 @@ code {
 
 .codeChalCard {
   align-items: center;
-  border: 2px solid gray;
-  border-radius: 5px;
+  background-color: lightgray;
+  border-radius: 3px;
   flex-direction: column;
-  height: 55vh;
-  margin: 20vh 2vh;
+  height: 47vh;
+  margin: 20vh 0.7vh;
   padding: 20px;
   text-align: center;
-  width: 16vw;
+  width: 17vw;
 }
 
 .codeChalImg {
-  height: 20vh;
+  height: 23vh;
   width: 20vh;
+  border: 2px solid gray;
+  border-radius: 40px;
 }
 
 .intro {
@@ -116,7 +118,7 @@ code {
 
 .resumeButton {
   background-color: goldenrod;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   margin: 1vw;
   padding: 15px;
