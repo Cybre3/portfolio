@@ -1,3 +1,4 @@
+import CodingChallenges from "./Components/CodingChallenges";
 import Intro from "./Components/Intro";
 import Nav from "./Components/Nav";
 // import { BrowserRouter as Router } from "react-router-dom";
@@ -27,6 +28,8 @@ function App() {
     <>
       <Nav />
       <Intro />
+      <CodingChallenges />
+      <div className="placeholder">Placeholder</div>
     </>
   );
 }

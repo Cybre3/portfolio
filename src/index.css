@@ -15,26 +15,46 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.intro {
+.codeChalCard {
   align-items: center;
-  background: url("./pics/bg/OutdoorClimbing.jpg") center;
+  border: 2px solid gray;
+  border-radius: 5px;
+  flex-direction: column;
+  height: 55vh;
+  margin: 20vh 2vh;
+  padding: 20px;
+  text-align: center;
+  width: 16vw;
+}
+
+.codeChalImg {
+  height: 20vh;
+  width: 20vh;
+}
+
+.intro {
+  background: url("./pics/bg/RockClimbFace.JPG") center;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: right 0 bottom 60%;
+  background-position: right 0 bottom 20%;
   color: white;
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 85vh;
   justify-content: space-evenly;
   margin: 0 auto;
   position: relative;
 }
 
 .intro {
-  font-family: 'Gideon Roman', cursive;
+  font-family: "Gideon Roman", cursive;
   /* font-family: 'Permanent Marker', cursive; */
   /* font-family: 'Ubuntu Mono', monospace; */
   /* font-family: "Caveat", cursive; */
+}
+
+.introBlock {
+  margin-left: 50px;
 }
 
 .intro h3 {
@@ -94,10 +114,15 @@ code {
   text-decoration: none;
 }
 
-.typical {
+/* .typical {
   text-align: center;
-}
+} */
 
 .underline {
   text-decoration-color: goldenrod;
+}
+
+.placeholder {
+  background-color: gray;
+  height: 500px;
 }

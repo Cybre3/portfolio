@@ -38,7 +38,7 @@ function Intro(props) {
       </div>
       <h3>
         <i style={{fontFamily: "Caveat, cursive"}}>Thank you for visiting my page</i>
-      </h3>
+       </h3>
     </div>
   );
 }
