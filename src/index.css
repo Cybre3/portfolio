@@ -42,7 +42,7 @@ code {
   color: white;
   display: flex;
   flex-direction: column;
-  height: 85vh;
+  height: 90vh;
   justify-content: space-evenly;
   margin: 0 auto;
   position: relative;
@@ -143,3 +143,5 @@ code {
   background-color: gray;
   height: 500px;
 }
+
+

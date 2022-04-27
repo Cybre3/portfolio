@@ -1,6 +1,8 @@
 import CodingChallenges from "./Components/CodingChallenges";
+import Footer from "./Components/Footer";
 import Intro from "./Components/Intro";
 import Nav from "./Components/Nav";
+import ProjectContainer from "./Components/ProjectContainer";
 // import { BrowserRouter as Router } from "react-router-dom";
 // import { Route, Routes, useLocation } from "react-router";
 // import { useEffect } from "react";
@@ -28,8 +30,9 @@ function App() {
     <>
       <Nav />
       <Intro />
+      <ProjectContainer />     
       <CodingChallenges />
-      <div className="placeholder">Placeholder</div>
+      <Footer />
     </>
   );
 }
