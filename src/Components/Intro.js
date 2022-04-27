@@ -6,11 +6,11 @@ function Intro(props) {
     <div className="intro">
       <div className="introBlock">
         <h1>Hello, </h1>
-        <h1>
+        <h1 className="mb-4">
           I am <u className="underline">Star</u>rika McCloud
         </h1>
         <div className="typical">
-          <h2>
+          <h3>
             {" "}
             <Typical
               loop={Infinity}
@@ -25,20 +25,20 @@ function Intro(props) {
                 2000,
               ]}
             />
-          </h2>
+          </h3>
         </div>
       </div>
       <div className="introBlock">
         <a href="#/" className="resumeButton">
-          See My Resume
+          View Resume
         </a>
         <a href="#/" className="resumeButton">
-          Download my Resume
+          Download Resume
         </a>
       </div>
-      <h3>
-        <i style={{fontFamily: "Caveat, cursive"}}>Thank you for visiting my page</i>
-      </h3>
+      <p>
+        <i className="thankyou" style={{fontFamily: "Caveat, cursive"}}>Thank you for visiting my page</i>
+       </p>
     </div>
   );
 }

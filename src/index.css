@@ -15,29 +15,51 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.intro {
+.codeChalCard {
   align-items: center;
-  background: url("./pics/bg/OutdoorClimbing.jpg") center;
+  background-color: lightgray;
+  border-radius: 3px;
+  flex-direction: column;
+  height: 47vh;
+  margin: 20vh 0.7vh;
+  padding: 20px;
+  text-align: center;
+  width: 17vw;
+}
+
+.codeChalImg {
+  height: 23vh;
+  width: 20vh;
+  border: 2px solid gray;
+  border-radius: 40px;
+}
+
+.intro {
+  background: url("./pics/bg/RockClimbFace.JPG") center;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-position: right 0 bottom 60%;
+  background-position: right 0 bottom 20%;
   color: white;
   display: flex;
   flex-direction: column;
-  height: 70vh;
+  height: 90vh;
   justify-content: space-evenly;
   margin: 0 auto;
   position: relative;
 }
 
 .intro {
-  font-family: 'Gideon Roman', cursive;
+  font-family: "Gideon Roman", cursive;
   /* font-family: 'Permanent Marker', cursive; */
   /* font-family: 'Ubuntu Mono', monospace; */
   /* font-family: "Caveat", cursive; */
 }
 
-.intro h3 {
+.introBlock {
+  margin-left: 50px;
+}
+
+.thankyou {
   background-color: white;
   border-radius: 30px;
   color: black;
@@ -45,7 +67,7 @@ code {
   padding: 5px 15px;
   position: absolute;
   right: 10px;
-  bottom: -10px;
+  bottom: 5px;
 }
 
 .nav {
@@ -74,6 +96,11 @@ code {
   border-radius: 8px;
 }
 
+.navicon:hover {
+  text-decoration: none;
+  color: navy;
+}
+
 .navlinks {
   float: right;
   margin-left: auto;
@@ -85,19 +112,36 @@ code {
   padding: 0 1vw;
 }
 
+.navlinks a:hover {
+  color: navy;
+}
+
 .resumeButton {
   background-color: goldenrod;
-  border-radius: 10px;
+  border-radius: 5px;
   color: white;
   margin: 1vw;
   padding: 15px;
   text-decoration: none;
 }
 
-.typical {
-  text-align: center;
+.resumeButton:hover {
+  background-color: darkslategrey;
+  color: white;
+  text-decoration: none;
 }
+
+/* .typical {
+  text-align: center;
+} */
 
 .underline {
   text-decoration-color: goldenrod;
 }
+
+.placeholder {
+  background-color: gray;
+  height: 500px;
+}
+
+
