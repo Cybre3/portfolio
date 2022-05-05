@@ -10,13 +10,13 @@ function Profile(props) {
         <div className="profile-details">
           <div className="colz">
             <div className="colz-icon">
-              <a href="#">
+              <a href="#/">
                 <i className="fa fa-facebook-square"></i>
               </a>
-              <a href="#">
+              <a href="#/">
                 <i className="fa fa-github"></i>
               </a>
-              <a href="#">
+              <a href="#/">
                 <i className="fa fa-linkedin"></i>
               </a>
             </div>

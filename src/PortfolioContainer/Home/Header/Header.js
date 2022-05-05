@@ -14,6 +14,7 @@ function Header(props) {
     let screenIndex = GET_SCREEN_INDEX(currentScreen.screenInView);
     if (screenIndex < 0) return;
   };
+  // eslint-disable-next-line
   let currentScreenSubscription =
     ScrollService.currentScreenBroadCaster.subscribe(updateCurrentScreen);
 
