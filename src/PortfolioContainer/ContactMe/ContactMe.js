@@ -15,6 +15,7 @@ function ContactMe(props) {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
+  //eslint-disable-next-line
   const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const [name, setName] = useState("");
@@ -72,21 +73,15 @@ function ContactMe(props) {
             {" "}
             <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} />
           </h2>
-          <a href="#">
-            <i className="fa fa-facebook-square"></i>
-          </a>
-          <a href="#">
-            <i className="fa fa-google-plus-square"></i>
-          </a>
-          <a href="#">
-            <i className="fa fa-instagram"></i>
-          </a>
-          <a href="#">
-            <i className="fa fa-youtube-square"></i>
-          </a>
-          <a href="#">
-            <i className="fa fa-twitter"></i>
-          </a>
+          <a href="#/">
+                <i className="fa fa-facebook-square"></i>
+              </a>
+              <a href="#/">
+                <i className="fa fa-github"></i>
+              </a>
+              <a href="#/">
+                <i className="fa fa-linkedin"></i>
+              </a>
         </div>
         <div className="back-form">
           <div className="img-back">
