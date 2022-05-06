@@ -13,15 +13,15 @@ function AboutMe(props) {
   const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga praesentium optio, eaque rerum! Provident similique accusantium nemo autem. Veritatis obcaecati tenetur iure eius earum ut molestias architecto voluptate aliquam nihil, eveniet aliquid culpa officia aut!`,
+    description: `Transitioning from a 10 year career as a Lighting Designer and Technician to Full Stack Development. My background consists of three years Electronic Engineering Technology, four years of Entertainment Technology and two years of Full Stack Development.`,
     highlights: {
       bullets: [
-        "bullet one some bullet",
-        "bullet one some bullet",
-        "bullet one some bullet",
-        "bullet one some bullet",
-        "bullet one some bullet",
-        "bullet one some bullet",
+        "10 years of troubleshooting experience",
+        "Founder of 'Storehouse Strength'",
+        "Owner of MTS - 'McCloud Lighting & Tech Solutions'",
+        "Visited 20 Countries",
+        "Quick Learner",
+        "I love finding solutions to problems",
       ],
       heading: "Here are a few highlights:",
     },

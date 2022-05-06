@@ -45,15 +45,18 @@ function Resume(props) {
   ];
 
   const programmingSkillDetails = [
-    { skill: "JavaScript", ratingPercentage: 85 },
-    { skill: "React JS", ratingPercentage: 85 },
-    { skill: "React Native", ratingPercentage: 85 },
-    { skill: "Express JS", ratingPercentage: 89 },
-    { skill: "Node JS", ratingPercentage: 85 },
-    { skill: "Mongo DB", ratingPercentage: 70 },
-    { skill: "Core Java", ratingPercentage: 80 },
-    { skill: "HTML", ratingPercentage: 80 },
-    { skill: "CSS", ratingPercentage: 80 },
+    { skill: "JavaScript" },
+    { skill: "React JS" },
+    { skill: "Express JS" },
+    { skill: "Node JS" },
+    { skill: "MongoDB | Firebase" },
+    { skill: "HTML | CSS" },
+    { skill: "Git | GitHub" },
+    { skill: "Mongoose" },
+    { skill: "Postman" },
+    { skill: "PHP" },
+    { skill: "Mocha | Chai" },
+    { skill: "Netlify | Heroku" },
   ];
 
   const projectDetails = [
@@ -75,6 +78,16 @@ function Resume(props) {
       description: "Some description of what the project consists of",
       subHeading: "Technologies Used: React JS, Bootstrap",
     },
+  ];
+
+  const interests = [
+    { label: "Rock Climbing", description: "" },
+    { label: "Basketball", description: "" },
+    { label: "Investing", description: "" },
+    { label: "Day Trading", description: "" },
+    { label: "Reading", description: "" },
+    { label: "Video Games", description: "" },
+    { label: "Non-Profit Work", description: "" },
   ];
 
   const resumeDetails = [
@@ -137,12 +150,6 @@ function Resume(props) {
         <div className="skill-parent" key={index}>
           <div className="heading-bullet"></div>
           <span>{skill.skill}</span>
-          <div className="skill-percentage">
-            <div
-              style={{ width: skill.ratingPercentage + "%" }}
-              className="active-percentage-bar"
-            ></div>
-          </div>
         </div>
       ))}
     </div>,
@@ -158,10 +165,12 @@ function Resume(props) {
         />
       ))}
     </div>,
-    <div className="resume-screen-container" key="interests">
-      <ResumeHeading heading="Teaching" description="some description about teaching" />
-      <ResumeHeading heading="Music" description="some description about music" />
-      <ResumeHeading heading="Reading" description="some description about reading" />
+    <div className="resume-screen-container interests-container" key="interests">
+      {interests.map((interest, index) => (
+        <div className="interest-parent">
+          <ResumeHeading key={index} heading={interest.label} description={interest.description} />
+        </div>
+      ))}
     </div>,
   ];
 

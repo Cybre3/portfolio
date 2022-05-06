@@ -112,7 +112,7 @@
   height: 15px;
   width: 15px;
   top: 5px;
-  background-color: var(--dark-orange);
+  background-color: #FFC72C;
   border-radius: 50%;
 }
 
@@ -129,11 +129,11 @@
 }
 
 .heading-date {
-  background-color: var(--dark-orange);
+  background-color: #FFC72C;
   padding: 4px 12px;
   font-size: 14px;
   border-radius: 14px;
-  color: white;
+  color: black;
 }
 
 .skill-parent {
@@ -151,24 +151,25 @@
   flex-wrap: wrap;
 }
 
-.skill-percentage {
-  position: relative;
-  height: 15px;
-  width: 70%;
-  background-color: var(--dark-orange);
-}
-
-.skill-percentage .active-percentage-bar {
-  height: 15px;
-  transition: 0.8s ease;
-  position: absolute;
-  background-color: #1f2235;
-}
-
 .skill-parent span {
   font-family: "Poppins SemiBold";
   font-size: 16px;
-  color: var(--dark-orange);
+  color: #1f2235;
+}
+
+.interests-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.interest-parent {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 50%;
 }
 
 @media only screen and (max-width: 1110px) {

@@ -42,7 +42,7 @@
 }
 
 .selected-header-option {
-  color: goldenrod;
+  color: #FFC72C;
 }
 
 @media only screen and (max-width: 1110px) {

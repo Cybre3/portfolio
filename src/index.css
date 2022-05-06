@@ -250,14 +250,14 @@ body ::-webkit-scrollbar-thumb {
 
 .primary-btn:hover {
   color: aliceblue;
-  border: 2px solid goldenrod;
+  border: 2px solid #FFC72C;
   background-color: #1f2235;
 }
 
 .highlighted-btn {
   color: var(--black);
   font-size: 12px;
-  background-color: goldenrod;
+  background-color: #FFC72C;
 }
 
 @media only screen and (max-width: 568px) {
