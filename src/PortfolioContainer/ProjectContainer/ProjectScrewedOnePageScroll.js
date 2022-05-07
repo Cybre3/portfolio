@@ -17,8 +17,8 @@ $(document).ready(function () {
     $(pgPrefix + curPage)
       .removeClass("inactive")
       .addClass("active");
-    $(pgPrefix + (curPage - 1)).addClass("inactive");
     $(pgPrefix + (curPage + 1)).removeClass("active");
+    $(pgPrefix + (curPage - 1)).addClass("inactive");
 
     setTimeout(function () {
       scrolling = false;
@@ -98,7 +98,7 @@ const ProjectScrewedOnePageScroll = (props) => {
   const { projects } = props;
 
   return (
-    <div className="skw-pages m-5 rounded" style={{ WebkitOverflowScrolling: "touch" }}>
+    <div className="skw-pages m-5 rounded" onTouchStart={enableScroll()}>
       {projects.map((project, index) => {
         const thisPage = index + 1;
 
@@ -163,4 +163,3 @@ const ProjectScrewedOnePageScroll = (props) => {
 };
 
 export default ProjectScrewedOnePageScroll;
-

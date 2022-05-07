@@ -34,7 +34,18 @@ function ProjectContainer(props) {
       githubCode: "https://github.com/Cybre3/Zephlipgloss/tree/admin",
     },
     {
-      title: "3dfm",
+      title: "Wiki App",
+      description: (
+        <p className="skw">
+          This family entertainment page is one of my very first project attempts. After teaching
+          myself HTML and CSS, I decided to put what was learned to the test.<br></br>{" "}
+          <em> Note: The Social media links do not work because they do not exist.</em>
+        </p>
+      ),
+      projectLink: "http://www.3dfmb.com",
+    },
+    {
+      title: "Rubix Cube",
       description: (
         <p className="skw">
           This family entertainment page is one of my very first project attempts. After teaching

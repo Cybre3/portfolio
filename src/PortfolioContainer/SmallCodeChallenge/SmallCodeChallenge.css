@@ -40,37 +40,10 @@
   border-radius: 50px 50px 50px 0;
 }
 
-.testimonial-section .testi-item p {
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
+.testimonial-section .testi-item img {
   margin: 0 0 10px;
-  font-style: italic;
 }
 
-.testimonial-section .testi-item p .fa-quote-left {
-  margin-right: 5px;
-  color: tomato;
-}
-
-.testimonial-section .testi-item p .fa-quote-right {
-  margin-left: 5px;
-  color: tomato;
-}
-
-.testimonial-section .testi-comment .stars {
-  margin: 0 0 20px;
-}
-
-.testimonial-section .testi-comment .stars li {
-  display: inline-block;
-  margin: 0 1px;
-}
-
-.testimonial-section .testi-comment .stars li i{
-  font-size: 13px;
-  color: tomato;
-}
 
 .testimonial-section .client-info {
   position: relative;
@@ -95,11 +68,4 @@
   font-weight: 600;
   line-height: 26px;
   margin: 0 0 2px;
-}
-
-.testimonial-section .client-info p {
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 400;
-  margin: 0;
 }

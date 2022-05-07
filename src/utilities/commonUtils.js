@@ -2,7 +2,7 @@ import Home from "../PortfolioContainer/Home/Home";
 import AboutMe from "../PortfolioContainer/AboutMe/AboutMe";
 import Resume from "../PortfolioContainer/Resume/Resume";
 import Project from "../PortfolioContainer/ProjectContainer/ProjectContainer";
-import Testimonial from "../PortfolioContainer/Testimonial/Testimonial";
+import Testimonial from "../PortfolioContainer/SmallCodeChallenge/SmallCodeChallenge";
 import ContactMe from "../PortfolioContainer/ContactMe/ContactMe";
 
 export const TOTAL_SCREENS = [
