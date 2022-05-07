@@ -49,7 +49,7 @@ function ProjectContainer(props) {
 
   return (
     <div className="project-container container">
-      <ScreenHeading title="Projects" subHeading="Check out some of my work" />
+      <ScreenHeading title={"Projects"} subHeading={"Check out some of my work"} />
       <ProjectScrewedOnePageScroll projects={projects} />
     </div>
   );

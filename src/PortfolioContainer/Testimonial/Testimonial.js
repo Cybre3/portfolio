@@ -41,7 +41,7 @@ function Testimonial(props) {
 
   return (
     <div className="fade-in" id={props.id || ""}>
-      <ScreenHeading title={"Testimonial"} subHeading={"What My Clients Say About Me"} />
+      <ScreenHeading title={"Small Coding Challenges"} subHeading={"What My Clients Say About Me"} />
       <section className="testimonial-section">
         <div className="container">
           <div className="row">
