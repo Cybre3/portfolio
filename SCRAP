@@ -1,0 +1,22 @@
+// import CardProject from "./SubComponents/CardProject";
+
+// function ProjectContainer(props) {
+//   return (
+//     <div className="container m-auto p-5">
+//       <div className="card-deck d-flex justify-content-center p-5">
+//         <CardProject
+//           button1="Live Demo"
+//           button2="GitHub Code"
+//           projectTitle="3DFMB"
+//           projectLink="http://www.3dfmb.com"
+//           image='https://d33wubrfki0l68.cloudfront.net/61b90ffdfbbcc00007523ad6/screenshot_2021-12-14-21-44-28-0000.png'
+//           githubCode="https://github.com/Cybre3/React_tic-tac-toe"
+//         />
+//         <CardProject button1="Live Demo" button2="GitHub Code" />
+//         <CardProject button1="Live Demo" button2="GitHub Code" />
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default ProjectContainer;

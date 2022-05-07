@@ -1,7 +1,7 @@
 import React from "react";
 // import codingPic from "./codingPic.png";
 
-import "../../SkewedScroll.scss";
+import "./SkewedScroll.scss";
 import $ from "jquery";
 
 $(document).ready(function () {

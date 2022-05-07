@@ -1,7 +1,20 @@
 import React from "react";
-import ProjectScrewedOnePageScroll from "./SubComponents/ProjectScrewedOnePageScroll";
+import ProjectScrewedOnePageScroll from "./ProjectScrewedOnePageScroll";
+
+import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
+import ScrollService from "../../utilities/ScrollService";
+import Animations from "../../utilities/Animations";
+import "./ProjectConatiner.css";
 
 function ProjectContainer(props) {
+
+  let fadeInScreenHandler = (screen) => {
+    if (screen.fadeInScreen !== props.id) return;
+    Animations.animations.fadeInScreen(props.id);
+  };
+  // eslint-disable-next-line
+  const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
+
   const projects = [
     {
       title: "3dfmb",
@@ -33,38 +46,13 @@ function ProjectContainer(props) {
     },
   ];
 
-  // $(document).ready(function () {
-    
-  // });
 
   return (
-    <div className="container">
+    <div className="project-container container">
+      <ScreenHeading title="Projects" subHeading="Check out some of my work" />
       <ProjectScrewedOnePageScroll projects={projects} />
     </div>
   );
 }
 
 export default ProjectContainer;
-
-// import CardProject from "./SubComponents/CardProject";
-
-// function ProjectContainer(props) {
-//   return (
-//     <div className="container m-auto p-5">
-//       <div className="card-deck d-flex justify-content-center p-5">
-//         <CardProject
-//           button1="Live Demo"
-//           button2="GitHub Code"
-//           projectTitle="3DFMB"
-//           projectLink="http://www.3dfmb.com"
-//           image='https://d33wubrfki0l68.cloudfront.net/61b90ffdfbbcc00007523ad6/screenshot_2021-12-14-21-44-28-0000.png'
-//           githubCode="https://github.com/Cybre3/React_tic-tac-toe"
-//         />
-//         <CardProject button1="Live Demo" button2="GitHub Code" />
-//         <CardProject button1="Live Demo" button2="GitHub Code" />
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default ProjectContainer;

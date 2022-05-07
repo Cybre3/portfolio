@@ -81,13 +81,12 @@ function Resume(props) {
   ];
 
   const interests = [
-    { label: "Rock Climbing", description: "" },
-    { label: "Basketball", description: "" },
-    { label: "Investing", description: "" },
-    { label: "Day Trading", description: "" },
-    { label: "Reading", description: "" },
-    { label: "Video Games", description: "" },
-    { label: "Non-Profit Work", description: "" },
+    { label: "Rock Climbing", description: "Rock Climbing is another way for me work all parts of my body and fully focus my mind on accomplishing one goal, getting to the top." },
+    { label: "Investing / Day Trading", description: "The reasearch never stops.  have not been trading as long I would have liked, but learning new things everyday." },
+    { label: "Non-Profit Work", description: "I am the Founder of a  non-profit called 'Storehouse Strength'. The Corporation was created to provide counseling, exclusively to cruise ship crew members." },
+    { label: "Reading", description: "I am constantly reading material that will help me improve. I love lerning new things and discovering new perspectives" },
+    { label: "Basketball", description: "One of my favorite sports. I played in elementary and middle school. Although, I respect practice and technique more than I did in my younger years." },
+    { label: "Video Games", description: "Favs: 'Assasins Creed', 'PC Building Simulator', 'Th3 Plan'. Fighting: 'Soul Caliber', 'Mortal Kombat', 'Dead or Alive'. My usual is multiplayer/co-op with family: 'Ghost Recon: Wildlands', 'Zero Hour', 'COD-MW3', 'Black Ops-Zombies or Gun Game', 'Heave Ho'. RPG games: 'Forest', 'LOSTARK', 'State of Decay'" },
   ];
 
   const resumeDetails = [
@@ -108,7 +107,7 @@ function Resume(props) {
         heading={"Mercer County Community College"}
         subHeading={"Electronic Engineering Technology"}
         fromDate={"2009"}
-        toDate={"2012"}
+        toDate={"2011"}
       />
       <ResumeHeading
         heading={"Trenton Central High School"}

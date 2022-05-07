@@ -7,7 +7,6 @@
 }
 $openSans: "Open Sans", Helvetica, Arial, sans-serif;
 body {
-    background: #15181a;
     font-family: $openSans;
 }
 
@@ -117,7 +116,7 @@ $scrollTime: 1s;
 
     &-1 {
         .skw-page__half--left .skw-page__content {
-            background-image: url("./Components/3DFMB.png");
+            background-image: url("../../assets/ProjectContainer/3DFMB.png");
         }
         .skw-page__half--right .skw-page__content {
             background: lighten(#1c1c1c, 5%);
