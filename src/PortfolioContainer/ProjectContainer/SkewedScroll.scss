@@ -6,12 +6,11 @@
     padding: 0;
 }
 $openSans: "Open Sans", Helvetica, Arial, sans-serif;
-body {
-    font-family: $openSans;
-}
+
 
 .skw-pages {
-    overflow: hidden;
+    font-family: $openSans;
+    overflow: scroll;
     position: relative;
     height: 65vh;
 }
