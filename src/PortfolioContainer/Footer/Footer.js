@@ -1,63 +1,23 @@
 import React from "react";
+import "./Footer.css";
 
 function Footer(props) {
   return (
-    <footer className="bg-light text-center text-white">
-      {/* <!-- Grid container --> */}
-      <div className="container p-4 pb-0">
-        {/* <!-- Section: Social media --> */}
-        <section className="mb-4">
-          {/* <!-- Facebook --> */}
-          <a
-            className="btn btn-primary btn-floating m-1"
-            style={{ backgroundColor: "#3b5998" }}
-            href="#!"
-            role="button"
-          >
-            <i className="fab fa-facebook-f"></i>
+    <footer className="footer-container">
+      <div className="text-center p-3" style={{ backgroundColor: "#f2e9de" }}>
+        <div className="col">
+          <a href="#/">
+            <i className="fa fa-facebook-square"></i>
           </a>
-
-          {/*  <!-- Google --> */}
-          <a
-            className="btn btn-primary btn-floating m-1"
-            style={{ backgroundColor: "#dd4b39" }}
-            href="#!"
-            role="button"
-          >
-            <i className="fab fa-google"></i>
+          <a href="#/">
+            <i className="fa fa-github"></i>
           </a>
-
-          {/*  <!-- Linkedin --> */}
-          <a
-            className="btn btn-primary btn-floating m-1"
-            style={{ backgroundColor: "#0082ca" }}
-            href="#!"
-            role="button"
-          >
-            <i className="fab fa-linkedin-in"></i>
+          <a href="#/">
+            <i className="fa fa-linkedin"></i>
           </a>
-          {/*  <!-- Github --> */}
-          <a
-            className="btn btn-primary btn-floating m-1"
-            style={{ backgroundColor: "#333333" }}
-            href="#!"
-            role="button"
-          >
-            <i className="fab fa-github"></i>
-          </a>
-        </section>
-        {/*  <!-- Section: Social media --> */}
+        </div>
+        This Has Been Fun! Come Again!
       </div>
-      {/*  <!-- Grid container -->
-
-  <!-- Copyright --> */}
-      <div className="text-center p-3" style={{ backgroundColor: "goldenRod" }}>
-        © 2020 Copyright:
-        <a className="text-white" href="https://mdbootstrap.com/">
-          MDBootstrap.com
-        </a>
-      </div>
-      {/*  <!-- Copyright --> */}
     </footer>
   );
 }

@@ -98,7 +98,7 @@ const ProjectScrewedOnePageScroll = (props) => {
   const { projects } = props;
 
   return (
-    <div className="skw-pages m-5 rounded" onTouchStart={enableScroll()}>
+    <div className="skw-pages m-5 rounded">
       {projects.map((project, index) => {
         const thisPage = index + 1;
 

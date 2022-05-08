@@ -4,6 +4,7 @@ import Resume from "../PortfolioContainer/Resume/Resume";
 import Project from "../PortfolioContainer/ProjectContainer/ProjectContainer";
 import Testimonial from "../PortfolioContainer/SmallCodeChallenge/SmallCodeChallenge";
 import ContactMe from "../PortfolioContainer/ContactMe/ContactMe";
+import Footer from "../PortfolioContainer/Footer/Footer";
 
 export const TOTAL_SCREENS = [
   {
@@ -29,6 +30,10 @@ export const TOTAL_SCREENS = [
   {
     screen_name: "ContactMe",
     component: ContactMe,
+  },
+  {
+    screen_name: "Footer",
+    component: Footer,
   },
   
 ];
