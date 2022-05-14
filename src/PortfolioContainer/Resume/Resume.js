@@ -40,7 +40,6 @@ function Resume(props) {
     { label: "Education", logoSrc: "education.svg" },
     { label: "Work History", logoSrc: "work-history.svg" },
     { label: "Programming Skills", logoSrc: "programming-skills.svg" },
-    { label: "Projects", logoSrc: "projects.svg" },
     { label: "Interests", logoSrc: "interests.svg" },
   ];
 
@@ -57,27 +56,6 @@ function Resume(props) {
     { skill: "PHP" },
     { skill: "Mocha | Chai" },
     { skill: "Netlify | Heroku" },
-  ];
-
-  const projectDetails = [
-    {
-      title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description: "Some description of what the project consists of",
-      subHeading: "Technologies Used: React JS, Bootstrap",
-    },
-    {
-      title: "Eccomerce Website",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description: "Some description of what the project consists of",
-      subHeading: "Technologies Used: React JS, Bootstrap",
-    },
-    {
-      title: "Mobile E-shop",
-      duration: { fromDate: "2020", toDate: "2021" },
-      description: "Some description of what the project consists of",
-      subHeading: "Technologies Used: React JS, Bootstrap",
-    },
   ];
 
   const interests = [
@@ -151,19 +129,7 @@ function Resume(props) {
           <span>{skill.skill}</span>
         </div>
       ))}
-    </div>,
-    <div className="resume-screen-container" key="projects">
-      {projectDetails.map((projectDetails, index) => (
-        <ResumeHeading
-          key={index}
-          heading={projectDetails.title}
-          subHeading={projectDetails.subHeading}
-          description={projectDetails.description}
-          fromDate={projectDetails.duration.fromDate}
-          toDate={projectDetails.duration.toDate}
-        />
-      ))}
-    </div>,
+    </div>,    
     <div className="resume-screen-container interests-container" key="interests">
       {interests.map((interest, index) => (
         <div className="interest-parent">

@@ -9,6 +9,8 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./SmallCodeChallenge.css";
 
+import productSortAppPic from '../../assets/SmallCodeChallenge/ProductSorter.png'
+
 function Testimonial(props) {
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
@@ -42,7 +44,7 @@ function Testimonial(props) {
 
   const challenges = [
     {title: "React Demo Tic-Tac-Toe", src: "https://d33wubrfki0l68.cloudfront.net/61b90ffdfbbcc00007523ad6/screenshot_2021-12-14-21-44-28-0000.png"},
-    {title: "", src: ""},
+    {title: "Product Sorter", src: productSortAppPic},
     {title: "", src: ""},
     {title: "", src: ""},
     {title: "", src: ""},
@@ -52,7 +54,7 @@ function Testimonial(props) {
     <div className="fade-in" id={props.id || ""}>
       <ScreenHeading
         title={"Small Coding Challenges"}
-        subHeading={"What My Clients Say About Me"}
+        subHeading={"Small and Fun JavaScript Apps"}
       />
       <section className="testimonial-section">
         <div className="container">
