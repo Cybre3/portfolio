@@ -2,7 +2,7 @@ import Home from "../PortfolioContainer/Home/Home";
 import AboutMe from "../PortfolioContainer/AboutMe/AboutMe";
 import Resume from "../PortfolioContainer/Resume/Resume";
 import Project from "../PortfolioContainer/ProjectContainer/ProjectContainer";
-import Testimonial from "../PortfolioContainer/SmallCodeChallenge/SmallCodeChallenge";
+import CodingChallenges from '../PortfolioContainer/SmallCodeChallenge/SmallCodeChallenge'
 import ContactMe from "../PortfolioContainer/ContactMe/ContactMe";
 import Footer from "../PortfolioContainer/Footer/Footer";
 
@@ -16,7 +16,7 @@ export const TOTAL_SCREENS = [
     component: AboutMe,
   },
   {
-    screen_name: "Project",
+    screen_name: "Projects",
     component: Project,
   },
   {
@@ -24,11 +24,11 @@ export const TOTAL_SCREENS = [
     component: Resume,
   },
   {
-    screen_name: "Testimonial",
-    component: Testimonial,
+    screen_name: "Coding Challenges",
+    component: CodingChallenges,
   },
   {
-    screen_name: "ContactMe",
+    screen_name: "Contact Me",
     component: ContactMe,
   },
   {

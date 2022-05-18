@@ -132,7 +132,7 @@ function Resume(props) {
     </div>,    
     <div className="resume-screen-container interests-container" key="interests">
       {interests.map((interest, index) => (
-        <div className="interest-parent">
+        <div className="interest-parent" key={index}>
           <ResumeHeading key={index} heading={interest.label} description={interest.description} />
         </div>
       ))}

@@ -75,7 +75,7 @@ function ProjectContainer(props) {
   ];
 
   return (
-    <div className="project-container container" id={props.id || ""}>
+    <div className="project-container container fade-in" id={props.id || ""}>
       <ScreenHeading title={"Projects"} subHeading={"Check out some of my work"} />
       <CardPC projects={projects} />
     </div>

@@ -50,7 +50,7 @@ function CardPC(props) {
                 ) : (
                   <div className="proj-content text">
                     <h2 className="proj-heading">{project.title}</h2>
-                    <p className="proj-description">{project.description}</p>
+                    <div className="proj-description">{project.description}</div>
                     <a className="buttonProj" href={project.projectLink}>
                       Live Demo
                     </a>

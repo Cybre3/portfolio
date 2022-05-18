@@ -11,7 +11,7 @@ import "./SmallCodeChallenge.css";
 
 import productSortAppPic from '../../assets/SmallCodeChallenge/ProductSorter.png'
 
-function Testimonial(props) {
+function SmallCodeChallenge(props) {
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
@@ -43,8 +43,8 @@ function Testimonial(props) {
   };
 
   const challenges = [
-    {title: "React Demo Tic-Tac-Toe", src: "https://d33wubrfki0l68.cloudfront.net/61b90ffdfbbcc00007523ad6/screenshot_2021-12-14-21-44-28-0000.png"},
-    {title: "Product Sorter", src: productSortAppPic},
+    {title: "React Demo Tic-Tac-Toe", src: "https://d33wubrfki0l68.cloudfront.net/61b90ffdfbbcc00007523ad6/screenshot_2021-12-14-21-44-28-0000.png", link: "https://demo-react-tic-tac-toe-demo.netlify.app/"},
+    {title: "Product Sorter", src: productSortAppPic, link: "https://product-sorter.netlify.app/"},
     {title: "", src: ""},
     {title: "", src: ""},
     {title: "", src: ""},
@@ -61,7 +61,7 @@ function Testimonial(props) {
           <div className="row">
             <OwlCarousel className="owl-carousel" id="testimonial-carousel" {...options}>
             {challenges.map((challenge, index) => (
-              <CardSCC title={challenge.title} src={challenge.src} />
+              <CardSCC key={index} title={challenge.title} src={challenge.src} link={challenge.link} />
             ))}
             </OwlCarousel>
           </div>
@@ -74,4 +74,4 @@ function Testimonial(props) {
   );
 }
 
-export default Testimonial;
+export default SmallCodeChallenge;
