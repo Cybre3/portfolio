@@ -47,8 +47,8 @@ function SmallCodeChallenge(props) {
     {title: "React Demo Tic-Tac-Toe", src: "https://d33wubrfki0l68.cloudfront.net/61b90ffdfbbcc00007523ad6/screenshot_2021-12-14-21-44-28-0000.png", link: "https://demo-react-tic-tac-toe-demo.netlify.app/"},
     {title: "Product Sorter", src: productSortAppPic, link: "https://product-sorter.netlify.app/"},
     {title: "Word Manifest", src: wordManifestAppPic, link: "https://word-manifest.netlify.app/"},
-    {title: "", src: ""},
-    {title: "", src: ""},
+    {title: "", src: "", link: ""},
+    {title: "", src: "", link: ""},
   ]
 
   return (

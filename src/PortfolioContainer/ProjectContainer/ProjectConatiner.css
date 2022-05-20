@@ -20,18 +20,23 @@
 }
 
 .proj-content {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
   background-color: black;
-  top: 0;
-  left: 0;
-  width: 100%;
+  display: flex;
   color: white;
+  flex-direction: column;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
 }
 
-.proj-content h2 {
-  margin: 35px 25px 20px -65px;
+.right .proj-content h2 {
+  margin: 35px 25px 20px -115px;
+  text-transform: uppercase;
+  font-size: 25px;
+}
+.left .proj-content h2 {
+  margin: 35px 25px 20px -35px;
   text-transform: uppercase;
   font-size: 25px;
 }
@@ -46,6 +51,14 @@
 
 .text {
   padding: 10% 20%;
+}
+
+.right .proj-description {
+  margin-right: 40px;
+}
+
+.left .proj-description {
+  margin-left: 60px;
 }
 
 .left {
@@ -102,4 +115,48 @@ a {
 }
 .right .bgPic {
   margin-left: -80px;
+}
+
+.proj-btn-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.proj-btn-container a {
+  transform: skew(18deg);
+  color: aliceblue;
+  border: 4px outset white;
+  border-radius: 5px;
+  letter-spacing: 0.05em;
+  padding: 5px 8px;
+}
+
+.proj-btn-container a:active {
+  border: 2px inset white;
+  transform: translateY(3px);
+  transform: skew(18deg);
+}
+
+.proj-btn-container a:hover {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.right .proj-btn-container {
+  margin: 0 0 -250px 140px;
+}
+
+.left .proj-btn-container {
+  margin: 0 0 -250px 170px;
+}
+
+.proj-link-btn {
+  margin-right: 20px;
+}
+
+.proj-github-btn {
+  margin-left: 20px;
 }

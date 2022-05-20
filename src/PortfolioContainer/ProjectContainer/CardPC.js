@@ -13,7 +13,7 @@ function CardPC(props) {
     margin: 30,
     animateIn: "animate__fadeInRight",
     animateOut: "animate__zoomOut",
-    autoplay: true,
+    autoplay: false,
     autoplayHoverPause: true,
     smartSpeed: 1000,
     items: 1,
@@ -51,15 +51,16 @@ function CardPC(props) {
                   <div className="proj-content text">
                     <h2 className="proj-heading">{project.title}</h2>
                     <div className="proj-description">{project.description}</div>
-                    <a className="buttonProj" href={project.projectLink}>
-                      Live Demo
-                    </a>
-
-                    {project.githubCode ? (
-                      <a href={project.githubCode} className="buttonProj">
-                        GitHub Code
+                    <div className="proj-btn-container">
+                      <a href={project.projectLink} className="proj-link-btn">
+                        Live Demo
                       </a>
-                    ) : null}
+                      {project.githubCode ? (
+                        <a href={project.githubCode} className="proj-github-btn">
+                          GitHub Code
+                        </a>
+                      ) : null}
+                    </div>
                   </div>
                 )}
               </div>
@@ -70,14 +71,16 @@ function CardPC(props) {
                   <div className="proj-content text">
                     <h2 className="proj-heading">{project.title}</h2>
                     <div className="proj-description">{project.description}</div>
-                    <a href={project.projectLink} className="buttonProj">
-                      Live Demo
-                    </a>
-                    {project.githubCode ? (
-                      <a href={project.githubCode} className="buttonProj">
-                        GitHub Code
+                    <div className="proj-btn-container">
+                      <a href={project.projectLink} className="proj-link-btn">
+                        Live Demo
                       </a>
-                    ) : null}
+                      {project.githubCode ? (
+                        <a href={project.githubCode} className="proj-github-btn">
+                          GitHub Code
+                        </a>
+                      ) : null}
+                    </div>
                   </div>
                 ) : (
                   <div className="image">
@@ -89,7 +92,6 @@ function CardPC(props) {
                     </div>
                   </div>
                 )}
-                
               </div>
             </div>
           </div>

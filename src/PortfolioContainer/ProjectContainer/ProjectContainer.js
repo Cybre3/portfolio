@@ -1,6 +1,7 @@
 import React from "react";
 import CardPC from "./CardPC";
 import pic3DFMB from "../../assets/ProjectContainer/3DFMB.png";
+import cubeApp from "../../assets/ProjectContainer/cube-app.png";
 
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
@@ -25,7 +26,7 @@ function ProjectContainer(props) {
           <em> Note: The Social media links do not work because they do not exist.</em>
         </p>
       ),
-      projectLink: "http://www.3dfmb.com",
+      projectLink: "",
       image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/mousover-img-2.jpg",
     },
     {
@@ -41,24 +42,24 @@ function ProjectContainer(props) {
       image: pic3DFMB,
     },
     {
+      title: "Rubix Cube",
+      description: (
+        <p className="skw">
+          One of my final Projects while attending Kingsland University. I really enjoyed working on
+          this app.
+        </p>
+      ),
+      githubCode: "https://github.com/Cybre3/cubeExpressGen",
+      projectLink: "https://kings-cube-app.herokuapp.com/",
+      image: cubeApp,
+    },
+    {
       title: "zephlipgloss",
       description: "Eccomerce Lipgloss website",
       projectLink: "https://61b98b11d3e7375e5af0e4b7--zephlipgloss-client.netlify.app",
       githubCode: "https://github.com/Cybre3/Zephlipgloss/tree/admin",
       image:
         "https://d33wubrfki0l68.cloudfront.net/61b98b11d3e7375e5af0e4b7/screenshot_2021-12-15-06-31-17-0000.png",
-    },
-    {
-      title: "Rubix Cube",
-      description: (
-        <p className="skw">
-          This family entertainment page is one of my very first project attempts. After teaching
-          myself HTML and CSS, I decided to put what was learned to the test.<br></br>{" "}
-          <em> Note: The Social media links do not work because they do not exist.</em>
-        </p>
-      ),
-      projectLink: "",
-      image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/sections-3.jpg",
     },
     {
       title: "Rubix Cube",
