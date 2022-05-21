@@ -1,7 +1,9 @@
 import React from "react";
 import CardPC from "./CardPC";
 import pic3DFMB from "../../assets/ProjectContainer/3DFMB.png";
-import cubeApp from "../../assets/ProjectContainer/cube-app.png";
+import picCubeApp from "../../assets/ProjectContainer/cube-app.png";
+import picVidApp from "../../assets/ProjectContainer/vid-tutorial-app.png";
+import picWikiApp from "../../assets/ProjectContainer/wiki-app.png";
 
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
@@ -18,16 +20,15 @@ function ProjectContainer(props) {
 
   const projects = [
     {
-      title: "Wiki App",
+      title: "Wiki Blog",
       description: (
         <p className="skw">
-          This family entertainment page is one of my very first project attempts. After teaching
-          myself HTML and CSS, I decided to put what was learned to the test.<br></br>{" "}
-          <em> Note: The Social media links do not work because they do not exist.</em>
+          Express Gen blog application created while attending Kingsland University.
         </p>
       ),
-      projectLink: "",
-      image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/mousover-img-2.jpg",
+      githubCode: "https://github.com/Cybre3/KingsWikiApp",
+      projectLink: "https://kings-wiki-blog.herokuapp.com/",
+      image: picWikiApp,
     },
     {
       title: "3dfmb",
@@ -51,7 +52,7 @@ function ProjectContainer(props) {
       ),
       githubCode: "https://github.com/Cybre3/cubeExpressGen",
       projectLink: "https://kings-cube-app.herokuapp.com/",
-      image: cubeApp,
+      image: picCubeApp,
     },
     {
       title: "zephlipgloss",
@@ -62,16 +63,16 @@ function ProjectContainer(props) {
         "https://d33wubrfki0l68.cloudfront.net/61b98b11d3e7375e5af0e4b7/screenshot_2021-12-15-06-31-17-0000.png",
     },
     {
-      title: "Rubix Cube",
+      title: "Course Enroll",
       description: (
         <p className="skw">
-          This family entertainment page is one of my very first project attempts. After teaching
-          myself HTML and CSS, I decided to put what was learned to the test.<br></br>{" "}
-          <em> Note: The Social media links do not work because they do not exist.</em>
+          A partial app completed at Kingsland university. The main point of this app was to show knowledge of backend functionality; controllers, middleware, routes, models, encryption, and contingent user access. <br/>
+          **Create a user to test application**
         </p>
       ),
-      projectLink: "",
-      image: "https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/img-test.jpg",
+      githubCode: "https://github.com/Cybre3/KingsVideoTutorialApp",
+      projectLink: "https://kings-video-course-app.herokuapp.com/",
+      image: picVidApp,
     },
   ];
 

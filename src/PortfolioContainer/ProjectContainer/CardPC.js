@@ -13,7 +13,7 @@ function CardPC(props) {
     margin: 30,
     animateIn: "animate__fadeInRight",
     animateOut: "animate__zoomOut",
-    autoplay: false,
+    autoplay: true,
     autoplayHoverPause: true,
     smartSpeed: 1000,
     items: 1,
@@ -52,11 +52,21 @@ function CardPC(props) {
                     <h2 className="proj-heading">{project.title}</h2>
                     <div className="proj-description">{project.description}</div>
                     <div className="proj-btn-container">
-                      <a href={project.projectLink} className="proj-link-btn">
+                      <a
+                        href={project.projectLink}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="proj-link-btn"
+                      >
                         Live Demo
                       </a>
                       {project.githubCode ? (
-                        <a href={project.githubCode} className="proj-github-btn">
+                        <a
+                          href={project.githubCode}
+                          className="proj-github-btn"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           GitHub Code
                         </a>
                       ) : null}
@@ -72,11 +82,21 @@ function CardPC(props) {
                     <h2 className="proj-heading">{project.title}</h2>
                     <div className="proj-description">{project.description}</div>
                     <div className="proj-btn-container">
-                      <a href={project.projectLink} className="proj-link-btn">
+                      <a
+                        href={project.projectLink}
+                        className="proj-link-btn"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         Live Demo
                       </a>
                       {project.githubCode ? (
-                        <a href={project.githubCode} className="proj-github-btn">
+                        <a
+                          href={project.githubCode}
+                          className="proj-github-btn"
+                          target="_blank"
+                          rel="noreferrer"
+                        >
                           GitHub Code
                         </a>
                       ) : null}
