@@ -11,6 +11,8 @@ import "./SmallCodeChallenge.css";
 
 import productSortAppPic from '../../assets/SmallCodeChallenge/ProductSorter.png'
 import wordManifestAppPic from '../../assets/SmallCodeChallenge/word-manifest.png'
+import forcastAppPic from '../../assets/SmallCodeChallenge/forecast.png'
+import fisherGmaeAppPic from '../../assets/SmallCodeChallenge/fisher-game.png'
 
 function SmallCodeChallenge(props) {
   let fadeInScreenHandler = (screen) => {
@@ -46,9 +48,9 @@ function SmallCodeChallenge(props) {
   const challenges = [
     {title: "React Demo Tic-Tac-Toe", src: "https://d33wubrfki0l68.cloudfront.net/61b90ffdfbbcc00007523ad6/screenshot_2021-12-14-21-44-28-0000.png", link: "https://demo-react-tic-tac-toe-demo.netlify.app/"},
     {title: "Product Sorter", src: productSortAppPic, link: "https://product-sorter.netlify.app/"},
+    {title: "Forecast", src: forcastAppPic, link: "https://first-forecast-app.herokuapp.com/"},
     {title: "Word Manifest", src: wordManifestAppPic, link: "https://word-manifest.netlify.app/"},
-    {title: "", src: "", link: ""},
-    {title: "", src: "", link: ""},
+    {title: "Fisher Catches", src: fisherGmaeAppPic, link: "https://my-fisher-catches.herokuapp.com/"},
   ]
 
   return (
