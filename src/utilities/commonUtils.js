@@ -32,7 +32,7 @@ export const TOTAL_SCREENS = [
     component: ContactMe,
   },
   {
-    screen_name: "Footer",
+    screen_name: "",
     component: Footer,
   },
   

@@ -6,7 +6,7 @@
   max-width: 100%;
 }
 
-.owl-carousel {
+.project-container .owl-carousel {
   border-radius: 4px;
   box-shadow: 5px 5px 5px 0px #0000007f, inset 4px 4px 15px 0px #00000067,
     0px 4px 5px 0px rgb(0, 0, 0);

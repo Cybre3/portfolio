@@ -183,7 +183,7 @@ function Resume(props) {
   return (
     <div className="resume-container screen-container fade-in" id={props.id || ""}>
       <div className="resume-content">
-        <ScreenHeading title={"Resume"} subHeading={"My Formal Bio Details"} />
+        <ScreenHeading title={"Resume"} subHeading={"Formal Bio Details"} />
         <div className="resume-card">
           <div className="resume-bullets">
             <div className="bullet-container">

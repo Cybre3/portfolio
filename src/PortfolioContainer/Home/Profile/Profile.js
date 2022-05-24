@@ -29,19 +29,18 @@ function Profile(props) {
           </div>
           <div className="profile-details-role">
             <span className="primary-text">
-              {" "}
               <h1>
-                {" "}
                 <Typical
-                  loop={Infinity}
                   steps={[
                     "Full Stack Developer 🔴",
-                    1000,
+                    1500,
                     "MERN Stack Developer",
-                    1000,
+                    1500,
                     "Troubleshooter",
-                    1000,
+                    1500,
                   ]}
+                  loop={Infinity}
+                  wrapper="p"
                 />
               </h1>
             </span>

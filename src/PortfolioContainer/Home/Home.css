@@ -30,6 +30,7 @@
   left: 2%;
 }
 
+
 @media only screen and (max-width: 1110px) {
   .home-container {
     min-height: 670px;
