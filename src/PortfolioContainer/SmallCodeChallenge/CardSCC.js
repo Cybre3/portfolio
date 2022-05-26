@@ -30,8 +30,10 @@ function CardSCC(props) {
             </div>
           </a>
         </div>
-        <div className="client-info">
-          <h5>{props.title}</h5>
+        <div className="scc-info">
+          <a href={props.link}>
+            <h5>{props.title}</h5>
+          </a>
         </div>
       </div>
     </div>

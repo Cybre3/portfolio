@@ -40,6 +40,7 @@
   border-top: none;
   border-radius: 50px 50px 50px 0;
   padding: 30px;
+  padding-bottom: 20px;
 }
 
 .SmallCodeChallenges-section .scc-item img {
@@ -47,14 +48,14 @@
 }
 
 
-.SmallCodeChallenges-section .client-info {
+.SmallCodeChallenges-section .scc-info {
   position: relative;
-  padding-left: 80px;
-  padding-top: 5px;
-  min-height: 60px;
+  padding-top: 10px;
+  min-height: 50px;
+  text-align: center;
 }
 
-.SmallCodeChallenges-section .client-info img {
+.SmallCodeChallenges-section .scc-info img {
   height: 70px;
   width: 70px;
   border: 2px solid transparent;
@@ -65,11 +66,15 @@
   position: absolute;
 }
 
-.SmallCodeChallenges-section .client-info h5 {
+.SmallCodeChallenges-section .scc-info h5 {
+  color: #1f2235;
   font-size: 16px;
   font-weight: 600;
   line-height: 26px;
-  margin: 0 0 2px;
+}
+
+.scc-info a:hover {
+  text-decoration: none;
 }
 
 .scc-img {
