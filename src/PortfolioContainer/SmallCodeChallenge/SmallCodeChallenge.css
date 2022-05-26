@@ -34,13 +34,13 @@
   height: 130px;
 }
 
-.testimonial-section .testi-item {
+.testimonial-section .scc-item {
   background-color: white;
   padding: 30px;
   border-radius: 50px 50px 50px 0;
 }
 
-.testimonial-section .testi-item img {
+.testimonial-section .scc-item img {
   margin: 0 0 10px;
 }
 
@@ -68,4 +68,9 @@
   font-weight: 600;
   line-height: 26px;
   margin: 0 0 2px;
+}
+
+.scc-img {
+  width: 50px;
+  height: 150px;
 }
