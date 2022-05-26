@@ -9,7 +9,7 @@ function CardSCC(props) {
   return (
     <div className="col-lg-12">
       <div className="scc-item">
-        <div className="scc-comment bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+        <div className="scc-comment bg-image hover-overlay" data-mdb-ripple-color="light">
           <img className="scc-img" src={props.src} alt={props.title} />
           <a href={props.link} target="_blank" rel="noopener noreferrer">
             <div

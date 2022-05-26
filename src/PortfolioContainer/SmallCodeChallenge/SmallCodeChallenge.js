@@ -9,11 +9,11 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./SmallCodeChallenge.css";
 
-import productSortAppPic from '../../assets/SmallCodeChallenge/ProductSorter.png'
-import wordManifestAppPic from '../../assets/SmallCodeChallenge/word-manifest.png'
-import forcastAppPic from '../../assets/SmallCodeChallenge/forecast.png'
-import fisherGmaeAppPic from '../../assets/SmallCodeChallenge/fisher-game.png'
-import ticTacToeAppPic from '../../assets/SmallCodeChallenge/tic-tac-toe.png'
+import productSortAppPic from '../../assets/SmallCodeChallenges/ProductSorter.png'
+import wordManifestAppPic from '../../assets/SmallCodeChallenges/word-manifest.png'
+import forcastAppPic from '../../assets/SmallCodeChallenges/forecast.png'
+import fisherGmaeAppPic from '../../assets/SmallCodeChallenges/fisher-game.png'
+import ticTacToeAppPic from '../../assets/SmallCodeChallenges/tic-tac-toe.png'
 
 function SmallCodeChallenge(props) {
   let fadeInScreenHandler = (screen) => {
@@ -31,7 +31,7 @@ function SmallCodeChallenge(props) {
     animateIn: "bounceInRight",
     animateOut: "bounceOutRight",
     dots: true,
-    autoplay: true,
+    autoplay: false,
     smartSpeed: 1000,
     responsive: {
       0: {
@@ -60,10 +60,10 @@ function SmallCodeChallenge(props) {
         title={"Small Coding Challenges"}
         subHeading={"Small and Fun JavaScript Apps"}
       />
-      <section className="testimonial-section">
+      <section className="SmallCodeChallenges-section">
         <div className="container">
           <div className="row">
-            <OwlCarousel className="owl-carousel" id="testimonial-carousel" {...options}>
+            <OwlCarousel className="owl-carousel" id="SmallCodeChallenges-carousel" {...options}>
             {challenges.map((challenge, index) => (
               <CardSCC key={index} title={challenge.title} src={challenge.src} link={challenge.link} />
             ))}
@@ -72,7 +72,7 @@ function SmallCodeChallenge(props) {
         </div>
       </section>
       <div className="footer-image">
-        <img src={require("../../assets/Testimonial/shape-bg.png")} alt="no internet connection" />
+        <img src={require("../../assets/SmallCodeChallenges/shape-bg.png")} alt="no internet connection" />
       </div>
     </div>
   );

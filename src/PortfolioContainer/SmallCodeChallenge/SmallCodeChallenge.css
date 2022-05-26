@@ -1,13 +1,13 @@
-.testimonial-section {
+.SmallCodeChallenges-section {
   padding: 80px 0 80px;
-  background-image: url("../../../src/assets/Testimonial/bg-1.jpg");
+  background-image: url("../../../src/assets/SmallCodeChallenges/bg-1.jpg");
   background-position: center;
   background-attachment: fixed;
   position: relative;
   z-index: -1;
 }
 
-.testimonial-section::before {
+.SmallCodeChallenges-section::before {
   content: "";
   position: absolute;
   left: 0;
@@ -34,25 +34,27 @@
   height: 130px;
 }
 
-.testimonial-section .scc-item {
+.SmallCodeChallenges-section .scc-item {
   background-color: white;
-  padding: 30px;
+  border: 5px outset gray;
+  border-top: none;
   border-radius: 50px 50px 50px 0;
+  padding: 30px;
 }
 
-.testimonial-section .scc-item img {
+.SmallCodeChallenges-section .scc-item img {
   margin: 0 0 10px;
 }
 
 
-.testimonial-section .client-info {
+.SmallCodeChallenges-section .client-info {
   position: relative;
   padding-left: 80px;
   padding-top: 5px;
   min-height: 60px;
 }
 
-.testimonial-section .client-info img {
+.SmallCodeChallenges-section .client-info img {
   height: 70px;
   width: 70px;
   border: 2px solid transparent;
@@ -63,7 +65,7 @@
   position: absolute;
 }
 
-.testimonial-section .client-info h5 {
+.SmallCodeChallenges-section .client-info h5 {
   font-size: 16px;
   font-weight: 600;
   line-height: 26px;
@@ -71,6 +73,5 @@
 }
 
 .scc-img {
-  width: 50px;
   height: 150px;
 }
