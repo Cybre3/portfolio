@@ -211,11 +211,16 @@
   }
 
   .resume-bullets {
-    width: 100%;
+    box-shadow: 0px 10px 13px -7px #000000, -11px 22px 8px -19px rgba(0,0,0,0.41);
     margin: 30px 0;
+    width: 100%;
   }
 
   .selected-bullet {
     width: 100%;
+  }
+
+  .heading-bullet {
+    display: none;
   }
 }
