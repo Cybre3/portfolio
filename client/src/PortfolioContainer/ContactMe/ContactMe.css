@@ -59,7 +59,7 @@ form p {
   text-align: center;
   margin-bottom: 10px;
   color: var(--dark-orange);
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.1rem;
   font-family: "Poppins Bold";
 }
 
@@ -69,27 +69,28 @@ form label {
   letter-spacing: 0.2rem;
 }
 
-form input,
-textarea {
-  width: 100%;
-  border: 2px solid rgba(0, 0, 0, 0);
-  outline: none;
-  background-color: rgba(230, 230, 230, 0.6);
-  padding: 0.5rem 1rem;
+input[type="text"],
+input[type="email"],
+textarea[type="textarea"] {
+  border-radius: 0 0 0 10px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid lightgray;
+  box-shadow: none;
   font-size: 1.1rem;
   margin-bottom: 22px;
-  border-radius: 10px;
-  transition: 0.3s;
+  outline: none;
+  padding: 0.5rem 1rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+  width: 100%;
 }
 
-textarea:focus {
-  border: 2px solid rgba(30, 85, 250, 0.7);
-  background-color: white;
-}
-
-input:focus {
-  border: 2px solid rgba(30, 85, 250, 0.7);
-  background-color: white;
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea[type="textarea"]:focus {
+  border-bottom: 1px solid #4285f4;
+  box-shadow: 0 1px 0 0 #4285f4;
 }
 
 form button {
@@ -97,7 +98,7 @@ form button {
   padding: 5px;
   outline: none;
   width: 160px;
-  border: 2px solid var(--dark-orange);
+  border: 3px solid var(--orange);
   font-size: 18px;
   border-radius: 19px;
   background-color: #1f2235;
@@ -109,7 +110,7 @@ form button {
 form button:hover {
   background-color: #1f2235;
   transition: all ease 1s;
-  border: 2px solid #1f2235;
+  border: 3px solid #1f2235;
 }
 
 button .load {

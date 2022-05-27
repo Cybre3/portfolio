@@ -3,11 +3,11 @@
   font-weight: 500;
 }
 
-.col i {
+.footer-container .col i {
   padding: 7px;
   color: #1f2235;
 }
 
-.col i:hover {
+.footer-container .col i:hover {
   transform: scale(1.5);
 }

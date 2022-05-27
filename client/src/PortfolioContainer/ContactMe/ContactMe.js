@@ -3,7 +3,7 @@ import Typical from "react-typical";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-import imgBack from "../../images/mailz.jpeg";
+import imgBack from "../../images/email-pc-world2.png";
 import load1 from "../../images/load2.gif";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
@@ -55,9 +55,9 @@ function ContactMe(props) {
         toast.success(res.data.msg);
         setBool(false);
 
-        setName("")
-        setEmail("")
-        setMessage("")
+        setName("");
+        setEmail("");
+        setMessage("");
       }
     } catch (error) {
       console.log(error);
@@ -73,15 +73,18 @@ function ContactMe(props) {
             {" "}
             <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} />
           </h2>
-          <a href="#/">
-                <i className="fa fa-facebook-square"></i>
-              </a>
-              <a href="#/">
-                <i className="fa fa-github"></i>
-              </a>
-              <a href="#/">
-                <i className="fa fa-linkedin"></i>
-              </a>
+          <a href="https://www.facebook.com/star.mccloud">
+            <i className="fa fa-facebook-square"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/starrika-mccloud-802a251a1/">
+            <i className="fa fa-linkedin"></i>
+          </a>
+          <a href="https://www.instagram.com/xybri/">
+            <i className="fa fa-instagram"></i>
+          </a>
+          <a href="https://github.com/Cybre3">
+            <i className="fa fa-github"></i>
+          </a>
         </div>
         <div className="back-form">
           <div className="img-back">
@@ -90,14 +93,19 @@ function ContactMe(props) {
           </div>
           <form onSubmit={submitForm}>
             <p>{banner}</p>
-            <label htmlFor="name">Name</label>
-            <input type="text" onChange={handleName} value={name} />
+            <label htmlFor="name"></label>
+            <input type="text" placeholder="Full Name" onChange={handleName} value={name} />
 
-            <label htmlFor="email">Email</label>
-            <input type="email" onChange={handleEmail} value={email} />
+            <label htmlFor="email"></label>
+            <input type="email" placeholder="Email" onChange={handleEmail} value={email} />
 
-            <label htmlFor="message">Message</label>
-            <textarea type="text" onChange={handleMessage} value={message} />
+            <label htmlFor="message"></label>
+            <textarea
+              type="textarea"
+              placeholder="Your message here"
+              onChange={handleMessage}
+              value={message}
+            />
 
             <div className="send-btn">
               <button type="submit">
