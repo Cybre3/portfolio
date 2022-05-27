@@ -1,0 +1,128 @@
+.home-container {
+  background-image: url("../../assets/Home/RockClimbFace.JPG");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: right 0 bottom 20%;
+  box-shadow: 0px 4px 5px 0px #000000;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 790px;
+  position: relative;
+}
+
+.thankyou {
+  border-radius: 30px;
+  bottom: 5px;
+  border: 3.5px inset whitesmoke;
+  color: whitsmoke;
+  opacity: 0.55;
+  padding: 2px 15px;
+  position: absolute;
+  right: 10px;
+}
+
+.profile-role-tagline {
+  display: flex;
+  font-size: 19px;
+  font-family: "Poppins light";
+  flex-direction: column;
+  position: absolute;
+  bottom: 2px;
+  left: 15px;
+}
+
+@media only screen and (max-width: 1110px) {
+  .home-container {
+    min-height: 670px;
+  }
+
+  .profile-role-tagline {
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    width: 400px;
+  }
+}
+
+
+@media only screen and (max-width: 970px) {
+  .home-container {
+    background-size: cover;
+    background-position: right 70% bottom 0;
+  }
+
+  .profile-role-tagline {
+    font-size: 16px;
+    text-align: center;
+    width: 300px;
+  }
+
+}
+
+
+@media only screen and (max-width: 560px) {
+  .profile-role-tagline {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10%;
+    border-bottom: 3px solid rgba(245, 245, 245, 0.2);
+    border-top: 3px solid rgba(245, 245, 245, 0.2);
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 500;
+    padding: 3px;
+    text-align: center;
+    width: 200px;
+  }
+
+  .thankyou {
+    font-size: 12px;
+  }
+} 
+
+
+@media only screen and (max-width: 480px) { 
+  .profile-role-tagline {
+   bottom: 65px;
+   left: 90px;
+   width: 250px;
+  }
+
+  .thankyou {
+    right: 90px;
+  }
+}
+
+@media only screen and (max-width: 400px) { 
+  .home-container {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .profile-role-tagline {
+    bottom: 65px;
+    left: 75px;
+    width: 250px;
+   }
+ 
+   .thankyou {
+     bottom: 25px;
+     right: 90px;
+   }
+} 
+
+@media only screen and (max-width: 350px) {
+  .home-container {
+  }
+
+  .profile-role-tagline {
+    bottom: 65px;
+    left: 40px;
+    width: 250px;
+   }
+ 
+   .thankyou {
+     right: 50px;
+   }
+}
