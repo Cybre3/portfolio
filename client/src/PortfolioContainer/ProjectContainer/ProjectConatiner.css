@@ -106,7 +106,7 @@
 
 .proj-content .proj-heading,
 .proj-description,
-a {
+.proj-link-btn, .proj-github-btn {
   transform: skew(18deg);
 }
 
