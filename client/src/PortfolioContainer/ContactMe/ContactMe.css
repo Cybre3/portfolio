@@ -38,6 +38,7 @@
   opacity: 0.5;
 }
 
+
 .back-form .img-back img {
   width: 100%;
   opacity: 0.5;
@@ -151,18 +152,31 @@ form {
   }
 
   .img-back {
-    flex: 1;
     align-self: center;
     margin-right: 20px;
   }
+
+  
 
   form {
     flex: 0.9;
   }
 }
 
+@media screen and (max-width: 920px) {
+  .img-back img {
+    height: 200px;
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (max-width: 414px) {
   .central-form h2 {
     font-size: 16px;
+  }
+
+  
+  .img-back img {
+    height: 150px;
   }
 }
