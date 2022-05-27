@@ -35,7 +35,7 @@ function ProjectContainer(props) {
       description: (
         <p className="skw">
           This family entertainment page is one of my very first project attempts. After teaching
-          myself HTML and CSS, I decided to put what was learned to the test.<br></br>{" "}
+          myself HTML and CSS, I decided to put what was learned to the test.<br/><br/>
           <em> Note: The Social media links do not work because they do not exist.</em>
         </p>
       ),
@@ -54,14 +54,14 @@ function ProjectContainer(props) {
       projectLink: "https://kings-cube-app.herokuapp.com/",
       image: picCubeApp,
     },
-    {
-      title: "zephlipgloss",
+ /*    {
+      title: "Zephlipgloss",
       description: "Eccomerce Lipgloss website",
       projectLink: "https://61b98b11d3e7375e5af0e4b7--zephlipgloss-client.netlify.app",
       githubCode: "https://github.com/Cybre3/Zephlipgloss/tree/admin",
       image:
         "https://d33wubrfki0l68.cloudfront.net/61b98b11d3e7375e5af0e4b7/screenshot_2021-12-15-06-31-17-0000.png",
-    },
+    }, */
     {
       title: "Course Enroll",
       description: (

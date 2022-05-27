@@ -9,14 +9,15 @@ function CardPC(props) {
   const { projects } = props;
 
   const options = {
-    loop: true,
-    margin: 30,
+    /*   autoplay: false,
+    autoplayHoverPause: true, */
     animateIn: "animate__fadeInRight",
     animateOut: "animate__zoomOut",
-    autoplay: true,
-    autoplayHoverPause: true,
-    smartSpeed: 1000,
     items: 1,
+    /* loop: true, */
+    margin: 30,
+    nav: false,
+    smartSpeed: 1000,
   };
 
   return (
@@ -48,9 +49,11 @@ function CardPC(props) {
                     </div>
                   </div>
                 ) : (
-                  <div className="proj-content text">
-                    <h2 className="proj-heading">{project.title}</h2>
-                    <div className="proj-description">{project.description}</div>
+                  <div className="proj-content">
+                    <div className="proj-text">
+                      <h2 className="proj-heading">{project.title}</h2>
+                      <div className="proj-description">{project.description}</div>
+                    </div>
                     <div className="proj-btn-container">
                       <a
                         href={project.projectLink}
@@ -58,7 +61,7 @@ function CardPC(props) {
                         rel="noreferrer"
                         className="proj-link-btn"
                       >
-                        Live Demo
+                        View Website
                       </a>
                       {project.githubCode ? (
                         <a
@@ -78,9 +81,11 @@ function CardPC(props) {
             <div className="right">
               <div className="skewed">
                 {pageIsOdd ? (
-                  <div className="proj-content text">
-                    <h2 className="proj-heading">{project.title}</h2>
-                    <div className="proj-description">{project.description}</div>
+                  <div className="proj-content">
+                    <div className="proj-text">
+                      <h2 className="proj-heading">{project.title}</h2>
+                      <div className="proj-description">{project.description}</div>
+                    </div>
                     <div className="proj-btn-container">
                       <a
                         href={project.projectLink}
@@ -88,7 +93,7 @@ function CardPC(props) {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        Live Demo
+                        View Website
                       </a>
                       {project.githubCode ? (
                         <a
