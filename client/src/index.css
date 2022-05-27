@@ -1,0 +1,277 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap");
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.codeChalCard {
+  align-items: center;
+  background-color: lightgray;
+  border-radius: 3px;
+  flex-direction: column;
+  height: 47vh;
+  margin: 20vh 0.7vh;
+  padding: 20px;
+  text-align: center;
+  width: 17vw;
+}
+
+.codeChalImg {
+  height: 23vh;
+  width: 20vh;
+  border: 2px solid gray;
+  border-radius: 40px;
+}
+
+.intro {
+  background: url("./pics/bg/RockClimbFace.JPG") center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: right 0 bottom 20%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  position: relative;
+} */
+
+/* .intro {
+  font-family: "Gideon Roman", cursive;
+  /* font-family: 'Permanent Marker', cursive; */
+/* font-family: 'Ubuntu Mono', monospace; */
+/* font-family: "Caveat", cursive; */
+
+/* .introBlock {
+  margin-left: 50px;
+}
+
+.thankyou {
+  background-color: white;
+  border-radius: 30px;
+  color: black;
+  opacity: 0.7;
+  padding: 5px 15px;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+}
+
+.nav {
+  align-items: center;
+  background-color: goldenrod;
+  border-bottom: 0.2vh solid white;
+  display: flex;
+  padding: 1vw;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.navicon {
+  align-items: center;
+  display: flex;
+  border-radius: 20px;
+  color: navy;
+  font-family: "Gideon Roman", cursive;
+  padding: 8px 25px;
+  font-size: larger;
+}
+
+.navicon img {
+  border-radius: 8px;
+}
+
+.navicon:hover {
+  text-decoration: none;
+  color: navy;
+}
+
+.navlinks {
+  float: right;
+  margin-left: auto;
+  margin-right: 8vw;
+}
+
+.navlinks a {
+  color: white;
+  padding: 0 1vw;
+}
+
+.navlinks a:hover {
+  color: navy;
+}
+
+.resumeButton {
+  background-color: goldenrod;
+  border-radius: 5px;
+  color: white;
+  margin: 1vw;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.resumeButton:hover {
+  background-color: darkslategrey;
+  color: white;
+  text-decoration: none;
+}
+
+
+.underline {
+  text-decoration-color: goldenrod;
+}
+
+.placeholder {
+  background-color: gray;
+  height: 500px;
+} */
+
+/* tutorial CSS */
+@font-face {
+  font-family: "Poppins Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins ExtraBold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Light";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Light.ttf");
+}
+
+@font-face {
+  font-family: "Poppins Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./assets/fonts/Poppins-Thin.ttf");
+}
+
+* {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  overflow-y: overlay;
+  font-family: "Poppins Regular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background-color: hsla(0, 0%, 100%, 0.16);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.1);
+}
+
+.btn {
+  border-radius: 50px;
+  padding: 14px 0;
+  width: 160px;
+  cursor: pointer;
+  transition: 0.2s;
+  font-family: "Poppins SemiBold";
+}
+
+.btn:active {
+  transform: translateY(2px);
+}
+
+.primary-btn {
+  color: var(--white);
+  border: 2px solid linen;
+  font-size: 12px;
+  background-color: #1f2235;
+}
+/* @media only screen and (max-width: 414px) {
+  .primary-btn {
+    font-size: 13px;
+  }
+} */
+
+.primary-btn:hover {
+  color: aliceblue;
+  border: 2px solid #FFC72C;
+  background-color: #1f2235;
+}
+
+.highlighted-btn {
+  color: var(--black);
+  font-size: 12px;
+  background-color: #FFC72C;
+}
+
+@media only screen and (max-width: 568px) {
+  .highlighted-btn {
+    z-index: -900;
+  }
+}
+
+.red-border {
+  border: 1px solid var(--error-message) !important;
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(80px);
+  transition: all 0.8s ease;
+}
