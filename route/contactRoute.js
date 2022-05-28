@@ -19,7 +19,7 @@ router.post("/contact", (req, res) => {
     secure: true,
     auth: {
       user: "cybre3@gmail.com",
-      pass: process.env.GMAIL_PASS,
+      pass: "Sweetness7!",
     },
   });
 
