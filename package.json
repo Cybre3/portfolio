@@ -1,28 +1,24 @@
 {
-  "name": "landing-page-2",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "cd server && nodemon server.js",
+    "start": "node server.js",
+    "server": "nodemon server.js",
     "client": "npm start --prefix client",
-    "start": "concurrently \"npm run server\" \"npm run client\"",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Cybre3/portfolio.git"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Cybre3/portfolio/issues"
-  },
-  "homepage": "https://github.com/Cybre3/portfolio#readme",
   "dependencies": {
-    "concurrently": "^7.2.1"
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemailer": "^6.7.5",
+    "nodemon": "^2.0.16"
   }
 }
