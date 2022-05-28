@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/Cybre3/portfolio#readme",
   "dependencies": {
-    "concurrently": "^7.2.1"
+    "concurrently": "^7.2.1",
+    "dotenv": "^16.0.1"
   }
 }
