@@ -1,5 +1,11 @@
+.small-code-challenge-container  {
+  margin: 120px 0 50px;  
+  min-height: 760px;
+  padding: 5px 0 0;
+}
+
 .SmallCodeChallenges-section {
-  padding: 80px 0 80px;
+  padding: 100px 0;
   background-image: url("../../../src/assets/SmallCodeChallenges/bg-1.jpg");
   background-position: center;
   background-attachment: fixed;

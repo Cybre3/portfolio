@@ -4,12 +4,12 @@
   flex-direction: column;
   justify-content: center;
   min-height: fit-content;
-  margin: 120px 0;
-  
+  margin: 50px 0 100px;  
 }
 
 .resume-card {
   display: flex;
+  margin: 100px 0 50px;
   height: 360px;
   width: 1000px;
 }

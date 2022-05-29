@@ -9,12 +9,12 @@ function CardPC(props) {
   const { projects } = props;
 
   const options = {
-    /*   autoplay: false,
-    autoplayHoverPause: true, */
+    autoplay: true,
+    autoplayHoverPause: true,
     animateIn: "animate__fadeInRight",
     animateOut: "animate__zoomOut",
     items: 1,
-    /* loop: true, */
+    loop: true,
     margin: 30,
     nav: false,
     smartSpeed: 1000,

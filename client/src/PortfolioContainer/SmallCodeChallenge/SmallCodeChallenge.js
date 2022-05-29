@@ -31,7 +31,7 @@ function SmallCodeChallenge(props) {
     animateIn: "bounceInRight",
     animateOut: "bounceOutRight",
     dots: true,
-    autoplay: false,
+    autoplay: true,
     smartSpeed: 1000,
     responsive: {
       0: {
@@ -55,7 +55,7 @@ function SmallCodeChallenge(props) {
   ]
 
   return (
-    <div className="fade-in" id={props.id || ""}>
+    <div className="small-code-challenge-container fade-in" id={props.id || ""}>
       <ScreenHeading
         title={"Small Coding Challenges"}
         subHeading={"Small and Fun JavaScript Apps"}
