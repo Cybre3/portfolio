@@ -113,9 +113,6 @@
 } 
 
 @media only screen and (max-width: 350px) {
-  .home-container {
-  }
-
   .profile-role-tagline {
     bottom: 65px;
     left: 40px;

@@ -1,5 +1,11 @@
 import React from "react";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
+import "animate.css";
+
 import CardPC from "./CardPC";
+
 import pic3DFMB from "../../assets/ProjectContainer/3DFMB.png";
 import picCubeApp from "../../assets/ProjectContainer/cube-app.png";
 import picVidApp from "../../assets/ProjectContainer/vid-tutorial-app.png";
@@ -35,7 +41,9 @@ function ProjectContainer(props) {
       description: (
         <p className="skw">
           This family entertainment page is one of my very first project attempts. After teaching
-          myself HTML and CSS, I decided to put what was learned to the test.<br/><br/>
+          myself HTML and CSS, I decided to put what was learned to the test.
+          <br />
+          <br />
           <em> Note: The Social media links do not work because they do not exist.</em>
         </p>
       ),
@@ -54,7 +62,7 @@ function ProjectContainer(props) {
       projectLink: "https://kings-cube-app.herokuapp.com/",
       image: picCubeApp,
     },
- /*    {
+    /*    {
       title: "Zephlipgloss",
       description: "Eccomerce Lipgloss website",
       projectLink: "https://61b98b11d3e7375e5af0e4b7--zephlipgloss-client.netlify.app",
@@ -66,7 +74,9 @@ function ProjectContainer(props) {
       title: "Course Enroll",
       description: (
         <p className="skw">
-          A partial app completed at Kingsland university. The main point of this app was to show knowledge of backend functionality; controllers, middleware, routes, models, encryption, and contingent user access. <br/>
+          A partial app completed at Kingsland university. The main point of this app was to show
+          knowledge of backend functionality; controllers, middleware, routes, models, encryption,
+          and contingent user access. <br />
           **Create a user to test application**
         </p>
       ),
@@ -76,10 +86,24 @@ function ProjectContainer(props) {
     },
   ];
 
+  const options = {
+    autoplay: true,
+    autoplayHoverPause: true,
+    animateIn: "animate__fadeInRight",
+    animateOut: "animate__zoomOut",
+    items: 1,
+    loop: true,
+    margin: 30,
+    nav: false,
+    smartSpeed: 1000,
+  };
+
   return (
     <div className="project-container container fade-in" id={props.id || ""}>
       <ScreenHeading title={"Projects"} subHeading={"Check out some of my work"} />
-      <CardPC projects={projects} />
+      <OwlCarousel className="owl-carousel container" {...options}>
+        <CardPC projects={projects} />
+      </OwlCarousel>
     </div>
   );
 }

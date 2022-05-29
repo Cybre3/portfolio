@@ -1,27 +1,10 @@
 import React from "react";
 
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
-import "animate.css";
-
 function CardPC(props) {
   const { projects } = props;
 
-  const options = {
-    autoplay: true,
-    autoplayHoverPause: true,
-    animateIn: "animate__fadeInRight",
-    animateOut: "animate__zoomOut",
-    items: 1,
-    loop: true,
-    margin: 30,
-    nav: false,
-    smartSpeed: 1000,
-  };
-
   return (
-    <OwlCarousel className="owl-carousel container" {...options}>
+    <>
       {projects.map((project, index) => {
         const thisPage = index + 1;
 
@@ -122,7 +105,7 @@ function CardPC(props) {
           </div>
         );
       })}
-    </OwlCarousel>
+    </>
   );
 }
 

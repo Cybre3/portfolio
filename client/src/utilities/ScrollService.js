@@ -7,6 +7,8 @@ export default class ScrollService {
   static currentScreenBroadCaster = new Subject();
   static currentScreenFadeIn = new Subject();
 
+
+
   constructor() {
     window.addEventListener("scroll", this.checkCurrentScreenUnderViewport);
   }
@@ -24,6 +26,10 @@ export default class ScrollService {
     let rec = elem.getBoundingClientRect();
     let elementTop = rec.top;
     let elementBottom = rec.bottom;
+
+    console.log(elementTop)
+    console.log(elementBottom)
+    console.log(window.innerHeight)
 
     let partiallyVisible = elementTop < window.innerHeight && elementBottom >= 0;
     let completelyVisible = elementTop >= 0 && elementBottom <= window.innerHeight;

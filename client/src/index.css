@@ -272,6 +272,6 @@ body ::-webkit-scrollbar-thumb {
 
 .fade-in {
   opacity: 0;
-  transform: translateY(80px);
+  transform: translateY(0px);
   transition: all 0.8s ease;
 }
