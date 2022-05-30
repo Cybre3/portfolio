@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 .home-container {
   background-image: url("../../assets/Home/RockClimbFace.JPG");
   background-size: 100%;
@@ -17,6 +19,8 @@
   bottom: 5px;
   border: 3.5px inset whitesmoke;
   color: whitesmoke;
+  font-family: 'Caveat', cursive;
+  letter-spacing: 0.03em;
   opacity: 0.55;
   padding: 2px 15px;
   position: absolute;

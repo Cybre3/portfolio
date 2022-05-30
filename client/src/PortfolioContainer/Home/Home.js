@@ -3,13 +3,13 @@ import Header from "./Header/Header";
 import Profile from "./Profile/Profile";
 import "./Home.css";
 
-function Home(props) {
+const Home = React.memo(function Home(props) {
   return (
     <div className="home-container" id={props.id || ""}>
       <Header />
       <Profile />
       <p>
-        <i className="thankyou" style={{ fontFamily: "Caveat, cursive" }}>
+        <i className="thankyou">
           Thank you for visiting my page
         </i>
       </p>
@@ -18,6 +18,6 @@ function Home(props) {
       </span>
     </div>
   );
-}
+})
 
 export default Home;

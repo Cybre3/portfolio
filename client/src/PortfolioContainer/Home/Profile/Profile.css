@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
 .profile-container {
   display: flex;
   text-align: center;
@@ -22,7 +24,7 @@
 
 .profile-details-role h1 {
   font-size: 40px;
-  font-family: cursive;
+  font-family: 'Caveat', cursive;
 }
 
 .primary-text {
@@ -54,7 +56,7 @@
 
 .colz .colz-icon i {
   color: white;
-  padding: 8px;
+  padding: 8px 12px;
   padding-left: 0px;
 }
 
