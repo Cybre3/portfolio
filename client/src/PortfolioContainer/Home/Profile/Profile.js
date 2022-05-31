@@ -60,7 +60,7 @@ function Profile(props) {
               {""}
               Hire Me{" "}
             </button>
-            <a href="McCloudS_CV - Full Stack.pdf" download="McCloudS_CV - Full Stack.pdf">
+            <a href="McClousS_CV - Full Stack.pdf" download="McClousS_CV - Full Stack.pdf">
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
           </div>
