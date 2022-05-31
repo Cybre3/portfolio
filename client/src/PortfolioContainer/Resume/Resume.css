@@ -10,7 +10,7 @@
 .resume-card {
   display: flex;
   margin: 100px 0 50px;
-  height: 360px;
+  height: 380px;
   width: 1000px;
 }
 
@@ -28,8 +28,9 @@
 }
 
 .experience-description {
-  margin: 10px 0 0 0;
+  font-size: 14px;
   text-align: justify;
+  margin: 5px 0 0 0;
   max-width: 100%;
 }
 
@@ -92,7 +93,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 360px;
+  height: 380px;
   width: 100%;
 }
 
@@ -121,13 +122,14 @@
   font-size: 14px;
   font-family: "Poppins SemiBold";
   color: #111;
-  margin: 10px 0 0 0;
+  margin: 5px 0 0 0;
 }
 
 .resume-heading-description {
   font-size: 12px;
   text-align: justify;
 }
+
 
 .heading-date {
   background-color: #FFC72C;
@@ -161,7 +163,7 @@
 .interests-container {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  align-items: baseline;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -171,7 +173,7 @@
   flex-direction: column;
   position: relative;
   width: 47%;
-  line-height: normal;
+  /* line-height: normal; */
 }
 
 @media only screen and (max-width: 1110px) {

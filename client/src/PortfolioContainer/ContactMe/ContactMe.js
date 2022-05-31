@@ -71,7 +71,7 @@ function ContactMe(props) {
         <div className="col">
           <h2 className="title">
             {" "}
-            <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} />
+            <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} wrapper="p" />
           </h2>
           <a href="https://www.facebook.com/star.mccloud">
             <i className="fa fa-facebook-square"></i>
