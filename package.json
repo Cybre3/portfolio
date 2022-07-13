@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Cybre3/portfolio#readme",
   "dependencies": {
-    "concurrently": "^7.2.1",
+    "concurrently": "^7.2.2",
     "get-port": "^6.1.2",
     "nodemon": "^2.0.19"
   }
