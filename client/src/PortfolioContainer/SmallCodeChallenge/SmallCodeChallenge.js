@@ -9,7 +9,7 @@ import ScrollService from "../../utilities/ScrollService";
 import Animations from "../../utilities/Animations";
 import "./SmallCodeChallenge.css";
 
-import productSortAppPic from '../../assets/SmallCodeChallenges/ProductSorter.png'
+import productSortAppPic from '../../assets/SmallCodeChallenges/ProductSorter-2.0.png'
 import wordManifestAppPic from '../../assets/SmallCodeChallenges/word-manifest.png'
 import forcastAppPic from '../../assets/SmallCodeChallenges/forecast.png'
 import fisherGmaeAppPic from '../../assets/SmallCodeChallenges/fisher-game.png'
