@@ -96,7 +96,7 @@ function Resume(props) {
     <div className="resume-screen-container" key="education">
       <ResumeHeading
         heading={"Kingsland University"}
-        subHeading={"Certified FullStack Developer"}
+        subHeading={"Certified Full Stack Developer"}
         fromDate={"2020"}
         toDate={"2021"}
       />

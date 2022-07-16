@@ -20,7 +20,8 @@
   border: 3.5px inset whitesmoke;
   color: whitesmoke;
   font-family: 'Caveat', cursive;
-  letter-spacing: 0.03em;
+  font-size: 18px;
+  letter-spacing: 0.04em;
   opacity: 0.55;
   padding: 2px 15px;
   position: absolute;
@@ -50,7 +51,6 @@
   }
 }
 
-
 @media only screen and (max-width: 970px) {
   .home-container {
     background-size: cover;
@@ -64,7 +64,6 @@
   }
 
 }
-
 
 @media only screen and (max-width: 560px) {
   .profile-role-tagline {
@@ -84,7 +83,6 @@
     font-size: 14px;
   }
 } 
-
 
 @media only screen and (max-width: 480px) { 
   .profile-role-tagline {

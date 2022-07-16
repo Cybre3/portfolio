@@ -90,7 +90,20 @@ function ContactMe(props) {
         <div className="col">
           <h2 className="title">
             {" "}
-            <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} wrapper="p" />
+            <Typical
+              loop={Infinity}
+              steps={[
+                "Get in touch through 📧",
+                2000,
+                "OR",
+                2000,
+                "Get to know me",
+                2000,
+                "Explore my social media pages",
+                3000,
+              ]}
+              wrapper="p"
+            />
           </h2>
           <a href="https://www.facebook.com/star.mccloud">
             <i className="fa fa-facebook-square"></i>
@@ -107,7 +120,7 @@ function ContactMe(props) {
         </div>
         <div className="back-form">
           <div className="img-back">
-            <h4>Send Your Email Here!</h4>
+            <h4>Email Your Full Stack Developer Here ➡ </h4>
             <img src={imgBack} alt="img not found" />
           </div>
           <form id="from_person_name" onSubmit={submitForm}>

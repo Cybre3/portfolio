@@ -58,7 +58,7 @@ function SmallCodeChallenge(props) {
     <div className="small-code-challenge-container fade-in" id={props.id || ""}>
       <ScreenHeading
         title={"Small Coding Challenges"}
-        subHeading={"Small and Fun JavaScript Apps"}
+        subHeading={"Small and Fun Javascript Apps"}
       />
       <section className="SmallCodeChallenges-section">
         <div className="container">

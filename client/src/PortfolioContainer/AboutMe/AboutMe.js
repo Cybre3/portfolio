@@ -13,7 +13,7 @@ function AboutMe(props) {
   const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description: `Transitioning from a 10 year career in Entertainment Technology to Full Stack Development. My background consists of three years Electronic Engineering Technology, four years of Entertainment Technology and two years of Full Stack Development.`,
+    description: `Transitioning from a 10 year career in Entertainment Technology to Full Stack Development. My background consists of three years of Electronic Engineering Technology, four years of Entertainment Technology and two years of Full Stack Development.`,
     highlights: {
       bullets: [
         "10 years of troubleshooting experience",
