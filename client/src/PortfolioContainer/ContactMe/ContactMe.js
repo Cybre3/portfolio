@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Typical from "react-typical";
 import axios from "axios";
 import { toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
 
 import imgBack from "../../images/email-pc-world2.png";
 import load1 from "../../images/load2.gif";
@@ -43,7 +44,9 @@ function ContactMe(props) {
         email,
         message,
       };
+
       setBool(true);
+
       const res = await axios.post("/contact", data);
 
       if (name.length === 0 || email.length === 0 || message.length === 0) {
@@ -54,6 +57,22 @@ function ContactMe(props) {
         setBanner(res.data.msg);
         toast.success(res.data.msg);
         setBool(false);
+
+        emailjs
+          .sendForm(
+            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+            e.target,
+            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+          )
+          .then(
+            (result) => {
+              console.log("SUCCESS!", result.status, result.text);
+            },
+            (error) => {
+              console.log("FAILED...", error);
+            }
+          );
 
         setName("");
         setEmail("");
@@ -91,20 +110,35 @@ function ContactMe(props) {
             <h4>Send Your Email Here!</h4>
             <img src={imgBack} alt="img not found" />
           </div>
-          <form onSubmit={submitForm}>
+          <form id="from_person_name" onSubmit={submitForm}>
             <p>{banner}</p>
             <label htmlFor="name"></label>
-            <input type="text" placeholder="Full Name" onChange={handleName} value={name} />
+            <input
+              type="text"
+              placeholder="Full Name"
+              onChange={handleName}
+              value={name}
+              name="from_person_name"
+            />
 
             <label htmlFor="email"></label>
-            <input type="email" placeholder="Email" onChange={handleEmail} value={email} />
+            <input
+              id="person_email"
+              type="email"
+              placeholder="Email"
+              onChange={handleEmail}
+              value={email}
+              name="person_email"
+            />
 
             <label htmlFor="message"></label>
             <textarea
+              id="message"
               type="textarea"
               placeholder="Your message here"
               onChange={handleMessage}
               value={message}
+              name="message"
             />
 
             <div className="send-btn">
