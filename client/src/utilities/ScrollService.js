@@ -27,10 +27,6 @@ export default class ScrollService {
     let elementTop = rec.top;
     let elementBottom = rec.bottom;
 
-    console.log(elementTop)
-    console.log(elementBottom)
-    console.log(window.innerHeight)
-
     let partiallyVisible = elementTop < window.innerHeight && elementBottom >= 0;
     let completelyVisible = elementTop >= 0 && elementBottom <= window.innerHeight;
 

@@ -39,7 +39,6 @@ $(document).ready(function () {
 
   $(document).on("mousewheel DOMMouseScroll touchstart touchmove", function (e) {
     e.target.className.includes("skw") ? disableScroll() : enableScroll();
-    console.log(e);
   });
 
   $(".skw-pages").on("mousewheel DOMMouseScroll touchstart touchmove", function (e) {
