@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import Typical from "react-typical";
 import axios from "axios";
 import { toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
 
+
+import Animations from "../../utilities/Animations";
+import ScrollService from "../../utilities/ScrollService";
+import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
+import TypicalContactMe from '../../utilities/Typical_Contactme'
+
 import imgBack from "../../images/email-pc-world2.png";
 import load1 from "../../images/load2.gif";
-import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-import ScrollService from "../../utilities/ScrollService";
-import Animations from "../../utilities/Animations";
 import "./ContactMe.css";
 
 function ContactMe(props) {
@@ -89,21 +91,7 @@ function ContactMe(props) {
       <div className="central-form">
         <div className="col">
           <h2 className="title">
-            {" "}
-            <Typical
-              loop={Infinity}
-              steps={[
-                "Get in touch through 📧",
-                2000,
-                "OR",
-                2000,
-                "Get to know me",
-                2000,
-                "Explore my social media pages",
-                3000,
-              ]}
-              wrapper="p"
-            />
+            <TypicalContactMe />
           </h2>
           <a href="https://www.facebook.com/star.mccloud">
             <i className="fa fa-facebook-square"></i>
