@@ -1,7 +1,6 @@
 import React from "react";
-
+import Typical from "react-typical";
 import ScrollService from "../../../utilities/ScrollService";
-import TypicalProfile from "../../../utilities/Typical_Profile";
 import "./Profile.css";
 
 function Profile(props) {
@@ -38,7 +37,18 @@ function Profile(props) {
           <div className="profile-details-role">
             <span className="primary-text">
               <h1>
-                <TypicalProfile />
+                <Typical
+                  steps={[
+                    "Full Stack Developer 💻",
+                    1500,
+                    "MERN Stack Developer",
+                    1500,
+                    "Troubleshooter 🧰",
+                    1500,
+                  ]}
+                  loop={Infinity}
+                  wrapper="p"
+                />
               </h1>
             </span>
           </div>
