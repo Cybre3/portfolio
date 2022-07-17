@@ -13,7 +13,7 @@ class TypicalContactMe extends React.PureComponent {
           "Get to know me",
           2000,
           "Explore my social media pages",
-          3000,
+          5000,
         ]}
         loop={Infinity}
         wrapper="p"

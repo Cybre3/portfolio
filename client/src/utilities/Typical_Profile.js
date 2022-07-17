@@ -7,11 +7,11 @@ class TypicalProfile extends React.PureComponent {
       <Typical
         steps={[
           "Full Stack Developer 💻",
-          1500,
+          2500,
           "MERN Stack Developer",
-          1500,
+          2500,
           "Troubleshooter 🧰",
-          1500,
+          2500,
         ]}
         loop={Infinity}
         wrapper="p"
