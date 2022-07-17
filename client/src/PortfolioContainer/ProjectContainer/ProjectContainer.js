@@ -102,7 +102,16 @@ function ProjectContainer(props) {
     <div className="project-container container fade-in" id={props.id || ""}>
       <ScreenHeading title={"Projects"} subHeading={"Check out some of my work"} />
       <OwlCarousel className="owl-carousel container" {...options}>
-        <CardPC projects={projects} />
+        {projects.map((project, index) => (
+          <CardPC
+            key={index}
+            title={project.title}
+            image={project.image}
+            description={project.description}
+            githubCode={project.githubCode}
+            projectLink={project.projectLink}
+          />
+        ))}
       </OwlCarousel>
     </div>
   );
