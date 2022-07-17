@@ -105,6 +105,7 @@ function ProjectContainer(props) {
         {projects.map((project, index) => (
           <CardPC
             key={index}
+            index={index}
             title={project.title}
             image={project.image}
             description={project.description}

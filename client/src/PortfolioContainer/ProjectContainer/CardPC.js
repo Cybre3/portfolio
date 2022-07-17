@@ -1,8 +1,8 @@
 import React from "react";
 
 function CardPC(props) {
-  const { key, title, image, description, projectLink, githubCode } = props;
-  const thisPage = key + 1;
+  const { index, title, image, description, projectLink, githubCode } = props;
+  const thisPage = index + 1;
 
   function numType(thisPage) {
     if (thisPage % 2 !== 0) {
@@ -15,7 +15,7 @@ function CardPC(props) {
   const pageIsOdd = numType(thisPage);
 
   return (
-    <div className={`proj-page proj-page-${thisPage}`} key={key}>
+    <div className={`proj-page proj-page-${thisPage}`} key={index}>
       <div className="left">
         <div className="skewed">
           {pageIsOdd ? (
