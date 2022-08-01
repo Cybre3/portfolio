@@ -49,7 +49,7 @@ function SmallCodeChallenge(props) {
   const challenges = [
     {title: "React Demo Tic-Tac-Toe", src: ticTacToeAppPic, link: "https://demo-react-tic-tac-toe-demo.netlify.app/"},
     {title: "Product Sorter", src: productSortAppPic, link: "https://product-sorter.netlify.app/"},
-    {title: "Forecast", src: forcastAppPic, link: "https://first-forecast-app.herokuapp.com/"},
+    {title: "Forecast", src: forcastAppPic, link: "https://rapidapi-forecast.herokuapp.com/"},
     {title: "Word Manifest", src: wordManifestAppPic, link: "https://word-manifest.netlify.app/"},
     {title: "Fisher Catches", src: fisherGmaeAppPic, link: "https://my-fisher-catches.herokuapp.com/"},
   ]
