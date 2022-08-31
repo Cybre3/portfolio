@@ -1,8 +1,8 @@
-import React from "react";
-import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
-import ScrollService from "../../utilities/ScrollService";
-import Animations from "../../utilities/Animations";
-import "./AboutMe.css";
+import React from 'react';
+import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
+import ScrollService from '../../utilities/ScrollService';
+import Animations from '../../utilities/Animations';
+import './AboutMe.css';
 
 function AboutMe(props) {
   let fadeInScreenHandler = (screen) => {
@@ -13,17 +13,23 @@ function AboutMe(props) {
   const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description: `Transitioning from a 10 year career in Entertainment Technology to Full Stack Development. My background consists of three years of Electronic Engineering Technology, four years of Entertainment Technology and two years of Full Stack Development.`,
+    description: `Transitioning careers, from Entertainment Technology to Full 
+    Stack Development. I have used my troubleshooting skills to 
+    assess, hindering, daily issues and provide simple yet effective 
+    solutions. Some solutions include but not limited to: Scaling 
+    organizational networks, advising technicians in problem solving, 
+    troubleshooting programmed equipment behavior.`,
     highlights: {
       bullets: [
-        "10 years of troubleshooting experience",
+        '10 years of troubleshooting experience',
+        `Scale organizational network by installing repeaters and 
+        extended data points for efficiency and effectiveness.`,
+        'Advise and lead other technicians in troubleshooting, problem solving and programming.',
         "Founder of 'Storehouse Strength'",
         "Owner of MTS - 'McCloud Lighting & Tech Solutions'",
-        "Visited 20 Countries",
-        "Quick Learner",
-        "I love finding solutions to problems",
+        'Visited 20 Countries',
       ],
-      heading: "Here are a few highlights:",
+      heading: 'Here are a few highlights:',
     },
   };
 
@@ -36,9 +42,9 @@ function AboutMe(props) {
     ));
   };
   return (
-    <div className="about-me-container screen-container fade-in" id={props.id || ""}>
+    <div className="about-me-container screen-container fade-in" id={props.id || ''}>
       <div className="about-me-parent">
-        <ScreenHeading title={"About Me"} subHeading={"Why Choose Me?"} />
+        <ScreenHeading title={'About Me'} subHeading={'Why Choose Me?'} />
         <div className="about-me-card">
           <div className="about-me-profile"></div>
           <div className="about-me-details">
@@ -54,8 +60,8 @@ function AboutMe(props) {
                 className="btn primary-btn"
                 onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
               >
-                {""}
-                Hire Me{" "}
+                {''}
+                Hire Me{' '}
               </button>
               <a href="McClousS_CV - Full Stack.pdf" download="McClousS_CV - Full Stack.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
