@@ -18,7 +18,7 @@ function AboutMe(props) {
     assess, hindering, daily issues and provide simple yet effective 
     solutions. Some solutions include but not limited to: Scaling 
     organizational networks, advising technicians in problem solving, 
-    troubleshooting programmed equipment behavior.`,
+    troubleshooting programmed equipment behavior...`,
     highlights: {
       bullets: [
         '10 years of troubleshooting experience',
