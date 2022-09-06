@@ -41,9 +41,12 @@ Clients and fellow technicians have expressed significant increase in efficiency
     ));
   };
   return (
-    <div className="about-me-container screen-container fade-in" id={props.id || ''}>
+    <div className="about-me-container screen-container" id={props.id || ''}>
       <div className="about-me-parent">
-        <ScreenHeading title={'About Me'} subHeading={'Why Choose Me?'} />
+        <ScreenHeading
+          title={'About Me'}
+          subHeading={'Why Choose Me?'}
+        />
         <div className="about-me-card">
           <div className="about-me-profile"></div>
           <div className="about-me-details">

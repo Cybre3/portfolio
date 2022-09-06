@@ -3,6 +3,11 @@
   font-weight: 500;
 }
 
+.footer-container .col {
+  display: flex;
+ justify-content: right;
+}
+
 .footer-container .col i {
   padding: 7px;
   color: #1f2235;
@@ -10,4 +15,27 @@
 
 .footer-container .col i:hover {
   transform: scale(1.5);
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 25px 0;
+  text-align: left;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+}
+
+.footer-section h5 {
+  margin-bottom: 20px;
+}
+
+.footer-section a {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
 }

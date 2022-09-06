@@ -27,8 +27,8 @@ function Profile(props) {
           </div>
           <div className="profile-details-name">
             <span className="primary-text">
-              {" "}
-              Hello, I'M{" "}
+              {' '}
+              Hello, I'M{' '}
               <span className="highlighted-text">
                 <span className="partial-name">Star</span>
                 rika
@@ -47,8 +47,8 @@ function Profile(props) {
               className="btn primary-btn"
               onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
             >
-              {""}
-              Hire Me{" "}
+              {''}
+              Hire Me{' '}
             </button>
             <a href="McClousS_CV - Full Stack.pdf" download="McClousS_CV - Full Stack.pdf">
               <button className="btn highlighted-btn">Get Resume</button>

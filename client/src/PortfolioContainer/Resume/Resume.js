@@ -50,13 +50,13 @@ function Resume(props) {
     { skill: 'React JS' },
     { skill: 'Express JS' },
     { skill: 'Node JS' },
-    { skill: 'MongoDB | Firebase' },
+    { skill: 'NoSQL' },
     { skill: 'HTML | CSS' },
     { skill: 'Git | GitHub' },
-    { skill: 'Mongoose' },
     { skill: 'Postman' },
-    { skill: 'PHP' },
-    { skill: 'Mocha | Chai' },
+    { skill: 'REST Services' },
+    { skill: 'MERN' },
+    { skill: 'Mocha | Chai | Jest' },
     { skill: 'Netlify | Heroku' },
   ];
 
@@ -74,7 +74,7 @@ function Resume(props) {
     {
       label: 'Non-Profit Work',
       description:
-        "I am the Founder of a  non-profit called 'Storehouse Strength'. The Corporation was created to provide counseling, exclusively to cruise ship crew members.",
+        "I am the Founder of a  non-profit called 'Storehouse Strength'. The organization exists to provide counseling, exclusively to cruise ship crew members.",
     },
     {
       label: 'Reading',
@@ -180,9 +180,13 @@ function Resume(props) {
       className="resume-screen-container full-resume-download-container"
       key="full-resume-download"
     >
-    <div className="resume-preview">
-      <img src={require('../../assets/Resume/resumePreview.png')} alt="resumePreview" width='400px' />
-    </div>
+      <div className="resume-preview">
+        <img
+          src={require('../../assets/Resume/resumePreview.png')}
+          alt="resumePreview"
+          width="400px"
+        />
+      </div>
       <a href="McClousS_CV - Full Stack.pdf" download="McClousS_CV - Full Stack.pdf">
         <button className="get-full-resume-btn">Download Full Resume</button>
       </a>
@@ -190,7 +194,7 @@ function Resume(props) {
   ];
 
   const handleCarousal = (index) => {
-    let offsetHeight = 380;
+    let offsetHeight = 440;
     let newCarousalOffset = {
       style: { transform: 'translateY(' + index * offsetHeight * -1 + 'px)' },
     };

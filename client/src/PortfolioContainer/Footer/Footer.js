@@ -1,10 +1,57 @@
-import React from "react";
-import "./Footer.css";
+import React from 'react';
+import FooterSection from './FooterSection';
+import './Footer.css';
+
+const challenges = [
+  {
+    title: 'React Demo Tic-Tac-Toe',
+    link: 'https://demo-react-tic-tac-toe-demo.netlify.app/',
+  },
+  { title: 'Product Sorter', link: 'https://product-sorter.netlify.app/' },
+  { title: 'Forecast', link: 'https://rapidapi-forecast.herokuapp.com/' },
+  { title: 'Word Manifest', link: 'https://word-manifest.netlify.app/' },
+  {
+    title: 'Fisher Catches',
+    link: 'https://my-fisher-catches.herokuapp.com/',
+  },
+];
+
+const projects = [
+  {
+    title: 'Wiki Blog',
+    githubCode: 'https://github.com/Cybre3/KingsWikiApp',
+    link: 'https://kings-wiki-blog.herokuapp.com/',
+  },
+  {
+    title: '3dfmb',
+    link: 'http://www.3dfmb.com',
+  },
+  {
+    title: 'Rubix Cube',
+    githubCode: 'https://github.com/Cybre3/cubeExpressGen',
+    link: 'https://kings-cube-app.herokuapp.com/',
+  },
+  /*    {
+      title: "Zephlipgloss",
+      description: "Eccomerce Lipgloss website",
+      link: "https://61b98b11d3e7375e5af0e4b7--zephlipgloss-client.netlify.app",
+      githubCode: "https://github.com/Cybre3/Zephlipgloss/tree/admin",
+      image:
+        "https://d33wubrfki0l68.cloudfront.net/61b98b11d3e7375e5af0e4b7/screenshot_2021-12-15-06-31-17-0000.png",
+    }, */
+  {
+    title: 'Course Enroll',
+    githubCode: 'https://github.com/Cybre3/KingsVideoTutorialApp',
+    link: 'https://kings-video-course-app.herokuapp.com/',
+  },
+];
+
+const upcomingProjs = [{ title: 'Mortal Kombat App' }, { title: 'Entertainment Tech App' }, {title: 'E ccomerce Lipgloss website'}];
 
 function Footer(props) {
   return (
     <footer className="footer-container">
-      <div className="text-center p-3" style={{ backgroundColor: "#f2e9de" }}>
+      <div className="text-center p-3" style={{ backgroundColor: '#f2e9de' }}>
         <div className="col">
           <a href="https://www.facebook.com/star.mccloud">
             <i className="fa fa-facebook-square"></i>
@@ -18,6 +65,13 @@ function Footer(props) {
           <a href="https://github.com/Cybre3">
             <i className="fa fa-github"></i>
           </a>
+        </div>
+        <div className="footer-sections">
+          <FooterSection header="Small Coding Apps" list={challenges} />
+          <FooterSection header="Projects" list={projects} />
+          <FooterSection header="Upcoming Projects" list={upcomingProjs} />
+          <FooterSection header="Lighting Tech/Design work" />
+          <FooterSection header="Rock Climbing" />
         </div>
         This Has Been Fun! Come Again!
       </div>
