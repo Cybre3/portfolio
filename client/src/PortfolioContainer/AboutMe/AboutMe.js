@@ -13,21 +13,20 @@ function AboutMe(props) {
   const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description: `Transitioning careers, from Entertainment Technology to Full 
-    Stack Development. I have used my troubleshooting skills to 
-    assess, hindering, daily issues and provide simple yet effective 
-    solutions. Some solutions include but not limited to: Scaling 
-    organizational networks, advising technicians in problem solving, 
-    troubleshooting programmed equipment behavior...`,
+    description: `Full Stack Developer with 10 years of Entertainment Technology experience.
+Troubleshooting, material digest and organizational strengths allow me to assess and resolve, hindering, daily
+issues. Resolutions include but not limited to: Scaling organizational networks, advising technicians in problem
+solving and refactoring equipment behavior programs.
+Clients and fellow technicians have expressed significant increase in efficiency.
+`,
     highlights: {
       bullets: [
         '10 years of troubleshooting experience',
-        `Scale organizational network by installing repeaters and 
+        `Scaled organizational network by installing repeaters and 
         extended data points for efficiency and effectiveness.`,
-        'Advise and lead other technicians in troubleshooting, problem solving and programming.',
+        'Advised and lead other technicians in troubleshooting, problem solving and programming.',
+        'Strengths: Troubleshooting, material digest and organization',
         "Founder of 'Storehouse Strength'",
-        "Owner of MTS - 'McCloud Lighting & Tech Solutions'",
-        'Visited 20 Countries',
       ],
       heading: 'Here are a few highlights:',
     },
