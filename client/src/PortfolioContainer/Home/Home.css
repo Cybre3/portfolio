@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 .home-container {
-  background-image: url("../../assets/Home/RockClimbFace.JPG");
+  background-image: url('../../assets/Home/RockClimbFace_resize.JPG');
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: right 0 bottom 20%;
@@ -31,7 +31,7 @@
 .profile-role-tagline {
   display: flex;
   font-size: 19px;
-  font-family: "Poppins light";
+  font-family: 'Poppins light';
   flex-direction: column;
   position: absolute;
   bottom: 2px;
@@ -62,7 +62,6 @@
     text-align: center;
     width: 300px;
   }
-
 }
 
 @media only screen and (max-width: 560px) {
@@ -82,13 +81,13 @@
   .thankyou {
     font-size: 14px;
   }
-} 
+}
 
-@media only screen and (max-width: 480px) { 
+@media only screen and (max-width: 480px) {
   .profile-role-tagline {
-   bottom: 65px;
-   left: 90px;
-   width: 250px;
+    bottom: 65px;
+    left: 90px;
+    width: 250px;
   }
 
   .thankyou {
@@ -96,7 +95,7 @@
   }
 }
 
-@media only screen and (max-width: 400px) { 
+@media only screen and (max-width: 400px) {
   .home-container {
     background-size: cover;
     background-position: center;
@@ -106,22 +105,22 @@
     bottom: 65px;
     left: 75px;
     width: 250px;
-   }
- 
-   .thankyou {
-     bottom: 25px;
-     right: 90px;
-   }
-} 
+  }
+
+  .thankyou {
+    bottom: 25px;
+    right: 90px;
+  }
+}
 
 @media only screen and (max-width: 350px) {
   .profile-role-tagline {
     bottom: 65px;
     left: 40px;
     width: 250px;
-   }
- 
-   .thankyou {
-     right: 50px;
-   }
+  }
+
+  .thankyou {
+    right: 50px;
+  }
 }
