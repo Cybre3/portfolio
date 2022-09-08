@@ -63,7 +63,7 @@ Clients and fellow technicians have expressed significant increase in efficiency
                 onClick={() => ScrollService.scrollHandler.scrollToHireMe()}
               >
                 {''}
-                Hire Me{' '}
+                Contact Me{' '}
               </button>
               <a href="McClousS_CV - Full Stack.pdf" download="McClousS_CV - Full Stack.pdf">
                 <button className="btn highlighted-btn">Get Resume</button>
