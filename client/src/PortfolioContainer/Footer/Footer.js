@@ -17,7 +17,7 @@ const challenges = [
 ];
 
 const projects = [
-  {
+ /*  {
     title: 'Wiki Blog',
     githubCode: 'https://github.com/Cybre3/KingsWikiApp',
     link: 'https://kings-wiki-blog.herokuapp.com/',
@@ -30,7 +30,7 @@ const projects = [
     title: 'Rubix Cube',
     githubCode: 'https://github.com/Cybre3/cubeExpressGen',
     link: 'https://kings-cube-app.herokuapp.com/',
-  },
+  }, */
   /*    {
       title: "Zephlipgloss",
       description: "Eccomerce Lipgloss website",
@@ -39,10 +39,15 @@ const projects = [
       image:
         "https://d33wubrfki0l68.cloudfront.net/61b98b11d3e7375e5af0e4b7/screenshot_2021-12-15-06-31-17-0000.png",
     }, */
+  // {
+  //   title: 'Course Enroll',
+  //   githubCode: 'https://github.com/Cybre3/KingsVideoTutorialApp',
+  //   link: 'https://kings-video-course-app.herokuapp.com/',
+  // },
   {
-    title: 'Course Enroll',
-    githubCode: 'https://github.com/Cybre3/KingsVideoTutorialApp',
-    link: 'https://kings-video-course-app.herokuapp.com/',
+    title: 'Coming Soon!',
+    githubCode: '',
+    link: '/',
   },
 ];
 
