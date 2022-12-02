@@ -62,7 +62,10 @@ Clients and fellow technicians have expressed significant increase in efficiency
                 {''}
                 Contact Me{' '}
               </button>
-              <a href="McClousS_CV - Full Stack.pdf" download="McClousS_CV - Full Stack.pdf">
+              <a
+                href="McCloudS_FullStack_Resume_2022_Updated.pdf"
+                download="McCloudS_FullStack_Resume_2022_Updated.pdf"
+              >
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>
             </div>

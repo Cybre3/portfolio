@@ -42,12 +42,12 @@ function Resume(props) {
     { label: 'Work History', logoSrc: 'work-history.svg' },
     { label: 'Programming Skills', logoSrc: 'programming-skills.svg' },
     { label: 'Interests', logoSrc: 'interests.svg' },
-    { label: 'Full Resume Download', logoSrc: 'download-16.png' },
+    { label: 'Full Resume Download', logoSrc: 'McCloudS_FullStack_Resume_2022_Updated.pdf.png' },
   ];
 
   const programmingSkillDetails = [
-    { skill: 'JavaScript' },
-    { skill: 'React JS' },
+    { skill: 'JavaScript | TypeScript' },
+    { skill: 'React JS | Redux' },
     { skill: 'Express JS' },
     { skill: 'Node JS' },
     { skill: 'NoSQL' },
@@ -116,6 +116,42 @@ function Resume(props) {
     </div>,
     <div className="resume-screen-container" key="work-experience">
       <ResumeHeading
+        heading={'Full Stack Developer'}
+        subHeading={'Front-End / Back-End Development'}
+        fromDate={'2020'}
+        toDate={'Current'}
+      />
+      <div className="experience-description">
+        <span className="resume-description-text">
+          - Work with directors/clients to build company/organization websites.
+        </span>
+        <br />
+        <span className="resume-description-text">
+          - Build/develop apps using MERN Stack and calling API endpoints.
+        </span>
+        <br />
+        <span className="resume-description-text">
+          - Test code using Test Driven Development practices.
+        </span>
+        <br />
+        <span className="resume-description-text">
+          - Collaborate with team using CI/CD tools such as Git/GitHub.
+        </span>
+        <br />
+        <span className="resume-description-text">
+          - Write and refactor reusable code and models to optimize code functionality and
+          comprehensibility.
+        </span>
+        <br />
+        <span className="resume-description-text">
+          - Implement libraries/plugins to create and develop robust features.
+        </span>
+        <br />
+        <span className="resume-description-text">
+          - Research new technologies and troubleshoot application bugs
+        </span>
+      </div>
+      <ResumeHeading
         heading={'Mercer County, New Jersey - Free Lance'}
         subHeading={`Lighting Technician and Designer ${midDot} Freelancer ${midDot} MTS`}
         fromDate={'2013'}
@@ -128,36 +164,18 @@ function Resume(props) {
         </span>
         <br />
         <span className="resume-description-text">
-          - Collaborate with directors and creative team.
+          - Collaborate with directors and creative team. Maintain/repair equipment - Update virtual
+          Rep plots.
         </span>
         <br />
         <span className="resume-description-text">
-          - Maintain / repair equipment - Update virtual Rep plots.
-        </span>
-        <br />
-        <span className="resume-description-text">
-          -Troubleshoot electrical circuits, signal connection, lighting software and intelligent
+          - Troubleshoot electrical circuits, signal connection, lighting software and intelligent
           lighting fixtures.
         </span>
-      </div>
-      <ResumeHeading
-        heading={'Norwegian Cruise Line'}
-        subHeading={'Lighting Technician'}
-        fromDate={'2018'}
-        toDate={'2020'}
-      />
-      <div className="experience-description">
-        <span className="resume-description-text">
-          - Advise and lead other technicians in troubleshooting, problem solving and programming
-          within their venue.
-        </span>
         <br />
         <span className="resume-description-text">
-          - Design, program and maintain lights for shows/events/musicals.
-        </span>
-        <br />
-        <span className="resume-description-text">
-          - Create detailed/organized inventory and incoming technician handover notes.
+          - Mentor/Teach Lighting concepts and procedures. Document procedures and
+          technical/wiring connections for new employees.
         </span>
       </div>
     </div>,
@@ -182,12 +200,15 @@ function Resume(props) {
     >
       <div className="resume-preview">
         <img
-          src={require('../../assets/Resume/resumePreview.png')}
+          src={require('../../assets/Resume/McCloudS_FullStack_Resume_2022_Updated.pdf.png')}
           alt="resumePreview"
           width="400px"
         />
       </div>
-      <a href="McClousS_CV - Full Stack.pdf" download="McClousS_CV - Full Stack.pdf">
+      <a
+        href="McCloudS_FullStack_Resume_2022_Updated.pdf"
+        download="McCloudS_FullStack_Resume_2022_Updated.pdf"
+      >
         <button className="get-full-resume-btn">Download Full Resume</button>
       </a>
     </div>,
