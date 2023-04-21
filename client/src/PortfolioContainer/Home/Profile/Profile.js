@@ -14,7 +14,7 @@ function Profile(props) {
               <a href="https://www.facebook.com/star.mccloud">
                 <i className="fa fa-facebook-square"></i>
               </a>
-              <a href="https://www.linkedin.com/in/starrika-mccloud-802a251a1/">
+              <a href="https://www.linkedin.com/in/starrika-mccloud/">
                 <i className="fa fa-linkedin"></i>
               </a>
               <a href="https://www.instagram.com/xybri/">
@@ -51,8 +51,8 @@ function Profile(props) {
               Contact Me{' '}
             </button>
             <a
-              href="McCloudS_FullStack_Resume_2022_Updated.pdf"
-              download="McCloudS_FullStack_Resume_2022_Updated.pdf"
+              href="McCloudS_FullStack_Resume_2023.pdf"
+              download="McCloudS_FullStack_Resume_2023.pdf"
             >
               <button className="btn highlighted-btn">Get Resume</button>
             </a>

@@ -13,20 +13,15 @@ function AboutMe(props) {
   const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description: `Full Stack Developer with 10 years of Entertainment Technology experience.
-Troubleshooting, material digest and organizational strengths allow me to assess and resolve, hindering, daily
-issues. Resolutions include but not limited to: Scaling organizational networks, advising technicians in problem
-solving and refactoring equipment behavior programs.
-Clients and fellow technicians have expressed significant increase in efficiency.
+    description: `3 years as a Full Stack Developer (MERN JavaScript) and 10 years of Entertainment Technology experience. Over the years, I have successfully brought to life, ideas and concepts articulated by directors and creative teams. Years of experience obtained as a technician have put me ahead of the game in the Full Stack Development space. 
 `,
     highlights: {
       bullets: [
         '10 years of troubleshooting experience',
-        `Scaled organizational network by installing repeaters and 
-        extended data points for efficiency and effectiveness.`,
-        'Advised and lead other technicians in troubleshooting, problem solving and programming.',
-        'Strengths: Troubleshooting, material digest and organization',
-        "Founder of 'Storehouse Strength'",
+        'Repaired and troubleshot various types of equipment (increasing the equipment’s life span and saving company resources)',
+        'Documented procedures for technicians and managers (allowing smooth transition and employee autonomy)',
+        `Advised colleagues on concepts and procedures (increasing company productivity)`,
+        `Scaled organizational networks (increasing production and maximizing scheduled timeslots)`,
       ],
       heading: 'Here are a few highlights:',
     },
@@ -63,8 +58,8 @@ Clients and fellow technicians have expressed significant increase in efficiency
                 Contact Me{' '}
               </button>
               <a
-                href="McCloudS_FullStack_Resume_2022_Updated.pdf"
-                download="McCloudS_FullStack_Resume_2022_Updated.pdf"
+                href="McCloudS_FullStack_Resume_2023.pdf"
+                download="McCloudS_FullStack_Resume_2023.pdf"
               >
                 <button className="btn highlighted-btn">Get Resume</button>
               </a>

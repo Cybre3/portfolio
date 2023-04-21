@@ -42,22 +42,22 @@ function Resume(props) {
     { label: 'Work History', logoSrc: 'work-history.svg' },
     { label: 'Programming Skills', logoSrc: 'programming-skills.svg' },
     { label: 'Interests', logoSrc: 'interests.svg' },
-    { label: 'Full Resume Download', logoSrc: 'McCloudS_FullStack_Resume_2022_Updated.pdf.png' },
+    { label: 'Full Resume Download', logoSrc: 'McCloudS_FullStack_Resume_2023_Updated.pdf.png' },
   ];
 
   const programmingSkillDetails = [
-    { skill: 'JavaScript | TypeScript' },
-    { skill: 'React JS | Redux' },
-    { skill: 'Express JS' },
-    { skill: 'Node JS' },
-    { skill: 'NoSQL' },
-    { skill: 'HTML | CSS' },
-    { skill: 'Git | GitHub' },
-    { skill: 'Postman' },
-    { skill: 'REST Services' },
     { skill: 'MERN' },
+    { skill: 'JavaScript | TypeScript' },
+    { skill: 'MongoDB | NoSQL' },
+    { skill: 'Git | GitHub' },
+    { skill: 'Express JS' },
+    { skill: 'Postman' },
+    { skill: 'React JS' },
+    { skill: 'REST Services' },
+    { skill: 'Node JS' },
     { skill: 'Mocha | Chai | Jest' },
-    { skill: 'Netlify | Heroku' },
+    { skill: 'HTML | CSS | Bootstrap | Tailwind CSS' },
+    { skill: 'Netlify | Heroku | Render | Railway' },
   ];
 
   const interests = [
@@ -65,16 +65,6 @@ function Resume(props) {
       label: 'Rock Climbing',
       description:
         'Rock Climbing is another way for me work all parts of my body and fully focus my mind on accomplishing one goal, getting to the top.',
-    },
-    {
-      label: 'Investing / Day Trading',
-      description:
-        'The reasearch never stops.  have not been trading as long I would have liked, but learning new things everyday.',
-    },
-    {
-      label: 'Non-Profit Work',
-      description:
-        "I am the Founder of a  non-profit called 'Storehouse Strength'. The organization exists to provide counseling, exclusively to cruise ship crew members.",
     },
     {
       label: 'Reading',
@@ -117,65 +107,46 @@ function Resume(props) {
     <div className="resume-screen-container" key="work-experience">
       <ResumeHeading
         heading={'Full Stack Developer'}
-        subHeading={'Front-End / Back-End Development'}
-        fromDate={'2020'}
+        subHeading={'Shalom Ministry'}
+        fromDate={'2022'}
         toDate={'Current'}
       />
       <div className="experience-description">
         <span className="resume-description-text">
-          - Work with directors/clients to build company/organization websites.
+          - Successfully tailored UI/UX for client customer digest by collaborating with client
+          design team using google meets/messaging.
         </span>
         <br />
         <span className="resume-description-text">
-          - Build/develop apps using MERN Stack and calling API endpoints.
+          - Proactively prevented the need for multiple organization platforms by developing a
+          dashboard UI, invoice/receipts, etc., for administrators/client to manage/access records
+          and events.
         </span>
         <br />
         <span className="resume-description-text">
-          - Test code using Test Driven Development practices.
+          - Optimized back-end for effective debugging by developing routing/middleware/logging with
+          Express/MongoDB/robust libraries.
         </span>
         <br />
         <span className="resume-description-text">
-          - Collaborate with team using CI/CD tools such as Git/GitHub.
+          - Promoted site credibility by developing secured user entry using front-end validation,
+          Cookies, JSON Web Token and hashing.
         </span>
         <br />
         <span className="resume-description-text">
-          - Write and refactor reusable code and models to optimize code functionality and
-          comprehensibility.
+          - Promoted active collaboration with clients using Netlify/Heroku/Railway to deploy
+          functional demos for clients to preview.
         </span>
         <br />
         <span className="resume-description-text">
-          - Implement libraries/plugins to create and develop robust features.
+          - Enabled informative bug fixes in a timely manner by utilizing Winston npm and Mongo DB
+          to log errors to database.
         </span>
         <br />
         <span className="resume-description-text">
-          - Research new technologies and troubleshoot application bugs
-        </span>
-      </div>
-      <ResumeHeading
-        heading={'Mercer County, New Jersey - Free Lance'}
-        subHeading={`Lighting Technician and Designer ${midDot} Freelancer ${midDot} MTS`}
-        fromDate={'2013'}
-        toDate={'2020'}
-      />
-      <div className="experience-description">
-        <span className="resume-description-text">
-          - Scale organizational network by installing repeaters and extended data points for
-          efficiency and effectiveness.
-        </span>
-        <br />
-        <span className="resume-description-text">
-          - Collaborate with directors and creative team. Maintain/repair equipment - Update virtual
-          Rep plots.
-        </span>
-        <br />
-        <span className="resume-description-text">
-          - Troubleshoot electrical circuits, signal connection, lighting software and intelligent
-          lighting fixtures.
-        </span>
-        <br />
-        <span className="resume-description-text">
-          - Mentor/Teach Lighting concepts and procedures. Document procedures and
-          technical/wiring connections for new employees.
+          - Maximized company meetings by leveraging separated/organized/reusable code modules and
+          snippets, to quickly edit demos on the fly; promotes simple/proactive debugging and
+          refactoring.
         </span>
       </div>
     </div>,
@@ -200,15 +171,12 @@ function Resume(props) {
     >
       <div className="resume-preview">
         <img
-          src={require('../../assets/Resume/McCloudS_FullStack_Resume_2022_Updated.pdf.png')}
+          src={require('../../assets/Resume/McCloudS_FullStack_Resume_2023_Updated.pdf.png')}
           alt="resumePreview"
           width="400px"
         />
       </div>
-      <a
-        href="McCloudS_FullStack_Resume_2022_Updated.pdf"
-        download="McCloudS_FullStack_Resume_2022_Updated.pdf"
-      >
+      <a href="McCloudS_FullStack_Resume_2023.pdf" download="McCloudS_FullStack_Resume_2023.pdf">
         <button className="get-full-resume-btn">Download Full Resume</button>
       </a>
     </div>,

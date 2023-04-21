@@ -142,52 +142,52 @@ code {
 
 /* tutorial CSS */
 @font-face {
-  font-family: "Poppins Medium";
+  font-family: 'Poppins Medium';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Medium.ttf");
+  src: url('./assets/fonts/Poppins-Medium.ttf');
 }
 
 @font-face {
-  font-family: "Poppins Regular";
+  font-family: 'Poppins Regular';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Regular.ttf");
+  src: url('./assets/fonts/Poppins-Regular.ttf');
 }
 
 @font-face {
-  font-family: "Poppins SemiBold";
+  font-family: 'Poppins SemiBold';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-SemiBold.ttf");
+  src: url('./assets/fonts/Poppins-SemiBold.ttf');
 }
 
 @font-face {
-  font-family: "Poppins Bold";
+  font-family: 'Poppins Bold';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Bold.ttf");
+  src: url('./assets/fonts/Poppins-Bold.ttf');
 }
 
 @font-face {
-  font-family: "Poppins ExtraBold";
+  font-family: 'Poppins ExtraBold';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-ExtraBold.ttf");
+  src: url('./assets/fonts/Poppins-ExtraBold.ttf');
 }
 
 @font-face {
-  font-family: "Poppins Light";
+  font-family: 'Poppins Light';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Light.ttf");
+  src: url('./assets/fonts/Poppins-Light.ttf');
 }
 
 @font-face {
-  font-family: "Poppins Thin";
+  font-family: 'Poppins Thin';
   font-style: normal;
   font-weight: normal;
-  src: url("./assets/fonts/Poppins-Thin.ttf");
+  src: url('./assets/fonts/Poppins-Thin.ttf');
 }
 
 * {
@@ -195,20 +195,20 @@ code {
 }
 
 body {
-    background-image: url('./assets/setup.jpg');
-  background-attachment: fixed;
+  /* background-image: url('./assets/setup.jpg'); */
+  /* background-attachment: fixed;
   background-position: center;
-  background-repeat: no-repeat;
-  background-size: 120% 120%;
+  background-repeat: no-repeat; */
+  /* background-size: 120% 120%; */
   margin: 0;
   overflow-y: overlay;
-  font-family: "Poppins Regular";
+  font-family: 'Poppins Regular';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 ::-webkit-scrollbar {
@@ -234,7 +234,7 @@ body ::-webkit-scrollbar-thumb {
   width: 160px;
   cursor: pointer;
   transition: 0.2s;
-  font-family: "Poppins SemiBold";
+  font-family: 'Poppins SemiBold';
 }
 
 .btn:active {
@@ -255,14 +255,14 @@ body ::-webkit-scrollbar-thumb {
 
 .primary-btn:hover {
   color: aliceblue;
-  border: 2px solid #FFC72C;
+  border: 2px solid #ffc72c;
   background-color: #1f2235;
 }
 
 .highlighted-btn {
   color: var(--black);
   font-size: 12px;
-  background-color: #FFC72C;
+  background-color: #ffc72c;
 }
 
 @media only screen and (max-width: 568px) {
@@ -279,4 +279,12 @@ body ::-webkit-scrollbar-thumb {
   opacity: 0;
   transform: translateY(0px);
   transition: all 0.8s ease;
+}
+
+#Home,
+.about-me-container,
+#Projects,
+#Resume,
+.small-code-challenge-container {
+  box-shadow: 0px 4px 5px 0px #000000;
 }

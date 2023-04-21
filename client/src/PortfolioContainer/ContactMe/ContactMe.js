@@ -96,7 +96,7 @@ function ContactMe(props) {
           <a href="https://www.facebook.com/star.mccloud">
             <i className="fa fa-facebook-square"></i>
           </a>
-          <a href="https://www.linkedin.com/in/starrika-mccloud-802a251a1/">
+          <a href="https://www.linkedin.com/in/starrika-mccloud/">
             <i className="fa fa-linkedin"></i>
           </a>
           <a href="https://www.instagram.com/xybri/">
