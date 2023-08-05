@@ -10,8 +10,6 @@ class TypicalContactMe extends React.PureComponent {
           2000,
           "OR",
           2000,
-          "Get to know me",
-          2000,
           "Explore my social media pages",
           5000,
         ]}

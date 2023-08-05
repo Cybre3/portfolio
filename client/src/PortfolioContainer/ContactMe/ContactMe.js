@@ -1,8 +1,5 @@
 import React, { useRef, useState } from "react";
-import axios from "axios";
 import { toast } from "react-toastify";
-import emailjs from "@emailjs/browser";
-
 
 import Animations from "../../utilities/Animations";
 import ScrollService from "../../utilities/ScrollService";
@@ -12,6 +9,8 @@ import TypicalContactMe from '../../utilities/Typical_Contactme'
 import imgBack from "../../images/email-pc-world2.png";
 import load1 from "../../images/load2.gif";
 import "./ContactMe.css";
+import { sendForm } from '../../services/contactService';
+import { sendEmail } from '../../services/emailService';
 
 function ContactMe(props) {
   let fadeInScreenHandler = (screen) => {
@@ -51,7 +50,7 @@ function ContactMe(props) {
 
       setBool(true);
 
-      const res = await axios.post("/contact", data);
+      const res = await sendForm(data);
 
       if (name.length === 0 || email.length === 0 || message.length === 0) {
         setBanner(res.data.msg);
@@ -62,21 +61,7 @@ function ContactMe(props) {
         toast.success(res.data.msg);
         setBool(false);
 
-        emailjs
-          .sendForm(
-            process.env.REACT_APP_EMAILJS_SERVICE_ID,
-            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-            form.current,
-            process.env.REACT_APP_EMAILJS_PUBLIC_KEY
-          )
-          .then(
-            (result) => {
-              console.log("SUCCESS!", result.status, result.text);
-            },
-            (error) => {
-              console.log("FAILED...", error);
-            }
-          );
+        sendEmail(form)
 
         setName("");
         setEmail("");
