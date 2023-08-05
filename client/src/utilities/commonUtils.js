@@ -1,41 +1,40 @@
-import Home from "../PortfolioContainer/Home/Home";
-import AboutMe from "../PortfolioContainer/AboutMe/AboutMe";
-import Resume from "../PortfolioContainer/Resume/Resume";
-import Projects from "../PortfolioContainer/ProjectContainer/ProjectContainer";
-import CodingChallenges from '../PortfolioContainer/SmallCodeChallenge/SmallCodeChallenge'
-import ContactMe from "../PortfolioContainer/ContactMe/ContactMe";
-import Footer from "../PortfolioContainer/Footer/Footer";
+import Home from '../PortfolioContainer/Home/Home';
+import AboutMe from '../PortfolioContainer/AboutMe/AboutMe';
+import Resume from '../PortfolioContainer/Resume/Resume';
+import Technologies from '../PortfolioContainer/Technologies/Technologies.jsx';
+import Projects from '../PortfolioContainer/Projects/Projects';
+import ContactMe from '../PortfolioContainer/ContactMe/ContactMe';
+import Footer from '../PortfolioContainer/Footer/Footer';
 
 export const TOTAL_SCREENS = [
   {
-    screen_name: "Home",
+    screen_name: 'Home',
     component: Home,
   },
   {
-    screen_name: "About Me",
+    screen_name: 'About Me',
     component: AboutMe,
   },
   {
-    screen_name: "Projects",
-    component: Projects,
+    screen_name: 'Technologies',
+    component: Technologies,
   },
   {
-    screen_name: "Resume",
+    screen_name: 'Resume',
     component: Resume,
   },
   {
-    screen_name: "Coding Challenges",
-    component: CodingChallenges,
+    screen_name: 'Projects',
+    component: Projects,
   },
   {
-    screen_name: "Contact Me",
+    screen_name: 'Contact Me',
     component: ContactMe,
   },
   {
-    screen_name: "",
+    screen_name: '',
     component: Footer,
   },
-  
 ];
 
 export const GET_SCREEN_INDEX = (screen_name) => {

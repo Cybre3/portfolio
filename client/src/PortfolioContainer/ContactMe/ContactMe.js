@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import axios from "axios";
 import { toast } from "react-toastify";
 import emailjs from "@emailjs/browser";
@@ -26,6 +26,8 @@ function ContactMe(props) {
   const [message, setMessage] = useState("");
   const [banner, setBanner] = useState("");
   const [bool, setBool] = useState(false);
+
+  const form = useRef();
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -64,7 +66,7 @@ function ContactMe(props) {
           .sendForm(
             process.env.REACT_APP_EMAILJS_SERVICE_ID,
             process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-            e.target,
+            form.current,
             process.env.REACT_APP_EMAILJS_PUBLIC_KEY
           )
           .then(
@@ -111,7 +113,7 @@ function ContactMe(props) {
             <h4>Email Your Full Stack Developer Here ➡ </h4>
             <img src={imgBack} alt="img not found" />
           </div>
-          <form id="from_person_name" onSubmit={submitForm}>
+          <form id="from_person_name" ref={form} onSubmit={submitForm}>
             <p>{banner}</p>
             <label htmlFor="name"></label>
             <input

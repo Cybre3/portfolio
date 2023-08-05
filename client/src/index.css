@@ -281,10 +281,6 @@ body ::-webkit-scrollbar-thumb {
   transition: all 0.8s ease;
 }
 
-#Home,
-.about-me-container,
-#Projects,
-#Resume,
-.small-code-challenge-container {
+#Home {
   box-shadow: 0px 4px 5px 0px #000000;
 }

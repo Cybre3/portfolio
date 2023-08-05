@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import ScrollService from "../utilities/ScrollService";
 
 import { TOTAL_SCREENS } from "../utilities/commonUtils";
+
 import "./PortfolioConatiner.css";
 
 export default function PortfolioConatiner() {

@@ -1,8 +1,11 @@
 import React from 'react';
+
 import FooterSection from './FooterSection';
+
 import './Footer.css';
 
-const challenges = [
+
+const projects = [
   {
     title: 'React Demo Tic-Tac-Toe',
     link: 'https://demo-react-tic-tac-toe-demo.netlify.app/',
@@ -14,10 +17,7 @@ const challenges = [
     title: 'Fisher Catches',
     link: 'https://my-fisher-catches.herokuapp.com/',
   },
-];
-
-const projects = [
- /*  {
+  /*  {
     title: 'Wiki Blog',
     githubCode: 'https://github.com/Cybre3/KingsWikiApp',
     link: 'https://kings-wiki-blog.herokuapp.com/',
@@ -44,14 +44,9 @@ const projects = [
   //   githubCode: 'https://github.com/Cybre3/KingsVideoTutorialApp',
   //   link: 'https://kings-video-course-app.herokuapp.com/',
   // },
-  {
-    title: 'Coming Soon!',
-    githubCode: '',
-    link: '/',
-  },
 ];
 
-const upcomingProjs = [{ title: 'Mortal Kombat App' }, { title: 'Entertainment Tech App' }, {title: 'E ccomerce Lipgloss website'}];
+const upcomingProjs = [{ title: 'Mortal Kombat App' }, {title: 'E ccomerce Lipgloss website'}];
 
 function Footer(props) {
   return (
@@ -72,7 +67,6 @@ function Footer(props) {
           </a>
         </div>
         <div className="footer-sections">
-          <FooterSection header="Small Coding Apps" list={challenges} />
           <FooterSection header="Projects" list={projects} />
           <FooterSection header="Upcoming Projects" list={upcomingProjs} />
           <FooterSection header="Lighting Tech/Design work" />

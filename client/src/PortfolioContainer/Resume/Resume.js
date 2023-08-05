@@ -7,7 +7,7 @@ import './Resume.css';
 function Resume(props) {
   const [selectedBullletIndex, setSelectedBullletIndex] = useState(0);
   const [carousalOffSetStyle, setCarousalOffSetStyle] = useState({});
-  const midDot = String.fromCharCode(183);
+  // const midDot = String.fromCharCode(183);
 
   let fadeInScreenHandler = (screen) => {
     if (screen.fadeInScreen !== props.id) return;
@@ -19,9 +19,9 @@ function Resume(props) {
     return (
       <div className="resume-heading">
         <div className="resume-main-heading">
-          <div className="heading-bullet"></div>
+          {props.bullet === false ? null : <div className="heading-bullet"></div>}
           <span>{props.heading ? props.heading : ''}</span>
-          {props.fromDate && props.toDate ? (
+          {props.fromDate || props.toDate ? (
             <div className="heading-date">{props.fromDate + '-' + props.toDate}</div>
           ) : (
             <div></div>
@@ -40,25 +40,56 @@ function Resume(props) {
   const resumeBullets = [
     { label: 'Education', logoSrc: 'education.svg' },
     { label: 'Work History', logoSrc: 'work-history.svg' },
-    { label: 'Programming Skills', logoSrc: 'programming-skills.svg' },
+    { label: 'Skills', logoSrc: 'programming-skills.svg' },
+    { label: 'Systems', logoSrc: 'programming-skills.svg' },
+    { label: 'Methods', logoSrc: 'programming-skills.svg' },
+    { label: 'Assets', logoSrc: 'programming-skills.svg' },
     { label: 'Interests', logoSrc: 'interests.svg' },
-    { label: 'Full Resume Download', logoSrc: 'McCloudS_FullStack_Resume_2023_Updated.pdf.png' },
+    { label: 'Full Resume Download', logoSrc: 'download-16.png' },
   ];
 
   const programmingSkillDetails = [
-    { skill: 'MERN' },
-    { skill: 'JavaScript | TypeScript' },
-    { skill: 'MongoDB | NoSQL' },
-    { skill: 'Git | GitHub' },
-    { skill: 'Express JS' },
-    { skill: 'Postman' },
-    { skill: 'React JS' },
-    { skill: 'REST Services' },
-    { skill: 'Node JS' },
-    { skill: 'Mocha | Chai | Jest' },
-    { skill: 'HTML | CSS | Bootstrap | Tailwind CSS' },
-    { skill: 'Netlify | Heroku | Render | Railway' },
+    { skill: 'Troubleshooting' },
+    { skill: 'Programming' },
+    { skill: 'Research' },
+    { skill: 'Maintenance & Repair' },
+    { skill: 'Technical Writing' },
+    { skill: 'Customer Relations' },
+    { skill: 'Debugging' },
+    { skill: 'Inventory Management' },
   ];
+
+  const systems = [
+    { skill: 'REST API' },
+    { skill: 'Cache' },
+    { skill: 'GitHub' },
+    { skill: 'Git' },
+    { skill: 'Netlify' },
+    { skill: 'Heroku' },
+    { skill: 'Railway' },
+    { skill: 'Render' },
+  ];
+
+  const methods = [
+    { skill: 'Version Control' },
+    { skill: 'OOP (Object Oriented Programming)' },
+    { skill: 'Functional Programming' },
+    { skill: 'TDD (Test Driven Development)' },
+    { skill: 'Code Optimization' },
+  ];
+
+  const assets = [
+    { skill: 'TypeScript' },
+    { skill: 'Redux' },
+    { skill: 'Firebase' },
+    { skill: 'jQuery' },
+    { skill: 'Bootstrap' },
+    { skill: 'Tailwind CSS' },
+    { skill: 'Three.js' },
+    { skill: 'React Three Fiber' },
+  ];
+
+
 
   const interests = [
     {
@@ -77,7 +108,7 @@ function Resume(props) {
         'One of my favorite sports. I played in elementary and middle school. Although, I respect practice and technique more than I did in my younger years.',
     },
     {
-      label: 'Video Games',
+      label: 'Gaming',
       description:
         "Favs: 'Assasins Creed', 'PC Building Simulator', 'Th3 Plan'. Fighting: 'Soul Caliber', 'Mortal Kombat', 'Dead or Alive'. My usual is multiplayer/co-op with family: 'Ghost Recon: Wildlands', 'Zero Hour', 'COD-MW3', 'Black Ops-Zombies or Gun Game', 'Heave Ho'. RPG games: 'Forest', 'LOSTARK', 'State of Decay'",
     },
@@ -94,59 +125,91 @@ function Resume(props) {
       <ResumeHeading
         heading={'Mercer County Community College'}
         subHeading={'Entertainment Technology'}
-        fromDate={'2012'}
-        toDate={'2016'}
-      />
-      <ResumeHeading
-        heading={'Mercer County Community College'}
-        subHeading={'Electronic Engineering Technology'}
-        fromDate={'2009'}
-        toDate={'2011'}
+        fromDate={''}
+        toDate={' anticipated May 2024'}
       />
     </div>,
-    <div className="resume-screen-container" key="work-experience">
+    <div
+      className="resume-screen-container justify-content-start overflow-auto pt-4"
+      key="work-experience"
+    >
       <ResumeHeading
-        heading={'Full Stack Developer'}
-        subHeading={'Shalom Ministry'}
-        fromDate={'2022'}
-        toDate={'Current'}
+        heading={'Shalom Ministry (Non-Profit)'}
+        subHeading={'Full Stack Developer (Volunteer Remote)'}
+        fromDate={'Oct. 2022 '}
+        toDate={' Current'}
       />
       <div className="experience-description">
         <span className="resume-description-text">
-          - Successfully tailored UI/UX for client customer digest by collaborating with client
-          design team using google meets/messaging.
+          • Minimizing bug-fix ticket turnaround by 75%, utilizing Winston npm and Mongo DB to log
+          errors to database.
         </span>
-        <br />
         <span className="resume-description-text">
-          - Proactively prevented the need for multiple organization platforms by developing a
-          dashboard UI, invoice/receipts, etc., for administrators/client to manage/access records
-          and events.
+          • Maximizing company meeting slots by leveraging separated/organized/reusable code modules
+          and snippets, to quickly edit demos; promotes simple/proactive debugging and refactoring.
         </span>
-        <br />
         <span className="resume-description-text">
-          - Optimized back-end for effective debugging by developing routing/middleware/logging with
-          Express/MongoDB/robust libraries.
+          • Improving client customer UI/UX experience by collaborating with design team using
+          google meets/messaging.
         </span>
-        <br />
         <span className="resume-description-text">
-          - Promoted site credibility by developing secured user entry using front-end validation,
-          Cookies, JSON Web Token and hashing.
+          • Integrating platform by developing an administrative client portal equipped with
+          dashboard UI, invoice/receipts, and employee access.
         </span>
-        <br />
         <span className="resume-description-text">
-          - Promoted active collaboration with clients using Netlify/Heroku/Railway to deploy
-          functional demos for clients to preview.
+          • Expediting release time by using Netlify/Heroku/Railway to deploy functional demos for
+          clients to preview.
         </span>
-        <br />
+      </div>
+      <ResumeHeading
+        heading={'Entrepreneur'}
+        subHeading={'Lighting Technician/Designer'}
+        fromDate={'2013 '}
+        toDate={' 2022'}
+      />
+      <div className="experience-description">
         <span className="resume-description-text">
-          - Enabled informative bug fixes in a timely manner by utilizing Winston npm and Mongo DB
-          to log errors to database.
+          • Reduced company maintenance expenses by 25% by maintaining / repairing equipment and
+          updating Rep plots/venue schematics.
         </span>
-        <br />
         <span className="resume-description-text">
-          - Maximized company meetings by leveraging separated/organized/reusable code modules and
-          snippets, to quickly edit demos on the fly; promotes simple/proactive debugging and
-          refactoring.
+          • Scaled organizational network, installed signal repeaters, and extended data points,
+          reducing tech install time and increasing technical rehearsal performance.
+        </span>
+        <span className="resume-description-text">
+          • Prevented interruptions and reduced damage rate by troubleshooting electrical circuits,
+          signal connections, lighting software and intelligent lighting fixtures.
+        </span>
+        <span className="resume-description-text">
+          • Consulted potential clients on cost friendly and efficient equipment and options.
+        </span>
+      </div>
+      <ResumeHeading
+        heading={'Norwegian Cruise Line'}
+        subHeading={'Lighting Technician'}
+        fromDate={'2018 '}
+        toDate={' 2020'}
+      />
+      <div className="experience-description">
+        <span className="resume-description-text">
+          • Reduced company material expenses by 15%, conducting inventory on item lockers.
+        </span>
+        <span className="resume-description-text">
+          • Reduced technician errors and equipment damage by creating incoming technician handover
+          and technical documents. Documents increased technician autonomy and management
+          performance.
+        </span>
+        <span className="resume-description-text">
+          • Advised and led technicians in troubleshooting, problem solving and programming within
+          their venues, increasing technical functionality.
+        </span>
+        <span className="resume-description-text">
+          • Reduced damage and shutdown rate by troubleshooting electrical circuits, signal
+          connections, lighting software and intelligent lighting fixtures.
+        </span>
+        <span className="resume-description-text">
+          • Reduced company maintenance expenses by maintaining / repairing equipment and updating
+          Rep plots/venue schematics.
         </span>
       </div>
     </div>,
@@ -158,10 +221,39 @@ function Resume(props) {
         </div>
       ))}
     </div>,
+    <div className="resume-screen-container programming-skills-container" key="medthods">
+      {systems.map((skill, index) => (
+        <div className="skill-parent" key={index}>
+          <div className="heading-bullet"></div>
+          <span>{skill.skill}</span>
+        </div>
+      ))}
+    </div>,
+    <div className="resume-screen-container programming-skills-container" key="methods">
+      {methods.map((skill, index) => (
+        <div className="skill-parent" key={index}>
+          <div className="heading-bullet"></div>
+          <span>{skill.skill}</span>
+        </div>
+      ))}
+    </div>,
+    <div className="resume-screen-container programming-skills-container" key="assets">
+      {assets.map((skill, index) => (
+        <div className="skill-parent" key={index}>
+          <div className="heading-bullet"></div>
+          <span>{skill.skill}</span>
+        </div>
+      ))}
+    </div>,
     <div className="resume-screen-container interests-container" key="interests">
       {interests.map((interest, index) => (
         <div className="interest-parent" key={index}>
-          <ResumeHeading key={index} heading={interest.label} description={interest.description} />
+          <ResumeHeading
+            key={index}
+            heading={interest.label}
+            description={interest.description}
+            bullet={false}
+          />
         </div>
       ))}
     </div>,
@@ -171,7 +263,7 @@ function Resume(props) {
     >
       <div className="resume-preview">
         <img
-          src={require('../../assets/Resume/McCloudS_FullStack_Resume_2023_Updated.pdf.png')}
+          src={require('../../assets/Resume/McCloudS_FullStack_Resume_2023.png')}
           alt="resumePreview"
           width="400px"
         />

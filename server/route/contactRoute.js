@@ -10,7 +10,7 @@ router.post("/contact", async (req, res) => {
 
   try {
     if (res.status === 400) res.json({ msg: "Please fill out the fields" });
-    res.status(200).json({ msg: "Thank you for contacting Starrika" });
+    res.status(200).json({ msg: "Your developer will reach out to you shortly!" });
   } catch (error) {
     if (error) return res.status(500).json({ msg: "There is server error" });
   }

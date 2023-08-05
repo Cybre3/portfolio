@@ -1,7 +1,9 @@
 import React from 'react';
+
 import ScreenHeading from '../../utilities/ScreenHeading/ScreenHeading';
 import ScrollService from '../../utilities/ScrollService';
 import Animations from '../../utilities/Animations';
+
 import './AboutMe.css';
 
 function AboutMe(props) {
@@ -13,15 +15,15 @@ function AboutMe(props) {
   const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description: `3 years as a Full Stack Developer (MERN JavaScript) and 10 years of Entertainment Technology experience. Over the years, I have successfully brought to life, ideas and concepts articulated by directors and creative teams. Years of experience obtained as a technician have put me ahead of the game in the Full Stack Development space. 
+    description: `Entry Level (JavaScript MERN) Full Stack Developer with 3 years of experience programming, coding, building, and maintaining web applications. 
 `,
     highlights: {
       bullets: [
         '10 years of troubleshooting experience',
-        'Repaired and troubleshot various types of equipment (increasing the equipment’s life span and saving company resources)',
-        'Documented procedures for technicians and managers (allowing smooth transition and employee autonomy)',
-        `Advised colleagues on concepts and procedures (increasing company productivity)`,
-        `Scaled organizational networks (increasing production and maximizing scheduled timeslots)`,
+        'Reduced company maintenance expenses by 25% by maintaining / repairing equipment and updating Rep plots/venue schematics',
+        'Reduced technician errors and equipment damage by creating incoming technician handover and technical documents. Documents increased technician autonomy and management performance',
+        `Reduced company material expenses by 15%, conducting inventory on item lockers`,
+        `Integrated platform by developing an administrative client portal equipped with dashboard UI, invoice/receipts, and employee access`,
       ],
       heading: 'Here are a few highlights:',
     },
@@ -29,9 +31,9 @@ function AboutMe(props) {
 
   const renderHighlights = () => {
     return SCREEN_CONSTANTS.highlights.bullets.map((value, i) => (
-      <div className="highlight" key={i}>
-        <div className="highlight-blob"></div>
-        <span>{value}</span>
+      <div className="highlight position-relative" key={i}>
+        <div className="highlight-blob position-absolute top-0 mt-1"></div>
+        <span className='mx-2 px-3'>{value}</span>
       </div>
     ));
   };
