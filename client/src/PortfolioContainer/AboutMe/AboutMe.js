@@ -15,8 +15,21 @@ function AboutMe(props) {
   const fadeInSubscription = ScrollService.currentScreenFadeIn.subscribe(fadeInScreenHandler);
 
   const SCREEN_CONSTANTS = {
-    description: `Entry Level (JavaScript MERN) Full Stack Developer with 3 years of experience programming, coding, building, and maintaining web applications. 
-`,
+    description: (
+      <p>
+        (JavaScript MERN) Full Stack Developer with 3 years of experience programming, coding,
+        building, and maintaining web applications. Relocating to and looking for roles in Dallas,
+        TX.
+        <br />
+        <br />
+        My passion is in troubleshooting, executing tasks with precision, and giving meticulous
+        attention to detail, always prioritizing the right approach over shortcuts.
+        <br />
+        My goals are working with others to solve relevant daily issues, enhance any place I
+        encounter and ensure I leave the place better than how I initially found it.
+      </p>
+    ),
+
     highlights: {
       bullets: [
         '10 years of troubleshooting experience',
@@ -33,7 +46,7 @@ function AboutMe(props) {
     return SCREEN_CONSTANTS.highlights.bullets.map((value, i) => (
       <div className="highlight position-relative" key={i}>
         <div className="highlight-blob position-absolute top-0 mt-1"></div>
-        <span className='mx-2 px-3'>{value}</span>
+        <span className="mx-2 px-3">{value}</span>
       </div>
     ));
   };
