@@ -40,7 +40,7 @@ function Resume(props) {
   const resumeBullets = [
     { label: 'Education', logoSrc: 'education.svg' },
     { label: 'Work History', logoSrc: 'work-history.svg' },
-    { label: 'Skills', logoSrc: 'programming-skills.svg' },
+    { label: 'Core Competencies / Skills', logoSrc: 'programming-skills.svg' },
     { label: 'Systems', logoSrc: 'programming-skills.svg' },
     { label: 'Methods', logoSrc: 'programming-skills.svg' },
     { label: 'Assets', logoSrc: 'programming-skills.svg' },
@@ -49,14 +49,16 @@ function Resume(props) {
   ];
 
   const programmingSkillDetails = [
-    { skill: 'Troubleshooting' },
-    { skill: 'Programming' },
-    { skill: 'Research' },
-    { skill: 'Maintenance & Repair' },
-    { skill: 'Technical Writing' },
-    { skill: 'Customer Relations' },
-    { skill: 'Debugging' },
-    { skill: 'Inventory Management' },
+    { skill: 'Web Development' },
+    { skill: 'JavaScript' },
+    { skill: 'UI/UX' },
+    { skill: 'Data/System Analysis and Integration' },
+    { skill: 'Code Management' },
+    { skill: 'Requirements Management' },
+    { skill: 'Relationship Builder' },
+    { skill: 'Strong Communicator' },
+    { skill: 'Problem Solver' },
+    { skill: 'Conceptual Thinking' },
   ];
 
   const systems = [
