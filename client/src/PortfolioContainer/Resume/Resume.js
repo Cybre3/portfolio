@@ -60,8 +60,10 @@ function Resume(props) {
   ];
 
   const systems = [
-    { skill: 'REST API' },
-    { skill: 'Cache' },
+    { skill: 'Visual Studio Code' },
+    { skill: 'IntelliJ' },
+    { skill: 'NPM' },
+    { skill: 'Terminal' },
     { skill: 'GitHub' },
     { skill: 'Git' },
     { skill: 'Netlify' },
@@ -72,6 +74,8 @@ function Resume(props) {
 
   const methods = [
     { skill: 'Version Control' },
+    { skill: 'REST API' },
+    { skill: 'Cache' },
     { skill: 'OOP (Object Oriented Programming)' },
     { skill: 'Functional Programming' },
     { skill: 'TDD (Test Driven Development)' },
@@ -119,14 +123,14 @@ function Resume(props) {
       <ResumeHeading
         heading={'Kingsland University'}
         subHeading={'Certified Full Stack Developer'}
-        fromDate={'2020'}
-        toDate={'2021'}
+        fromDate={'2020 '}
+        toDate={' 2021'}
       />
       <ResumeHeading
         heading={'Mercer County Community College'}
-        subHeading={'Entertainment Technology'}
-        fromDate={''}
-        toDate={' anticipated May 2024'}
+        subHeading={'65 Credit Hours'}
+        fromDate={'2009 '}
+        toDate={' 2015'}
       />
     </div>,
     <div
@@ -135,50 +139,41 @@ function Resume(props) {
     >
       <ResumeHeading
         heading={'Shalom Ministry (Non-Profit)'}
-        subHeading={'Full Stack Developer (Volunteer Remote)'}
+        subHeading={'Full Stack Developer (Volunteer)'}
         fromDate={'Oct. 2022 '}
         toDate={' Current'}
       />
       <div className="experience-description">
         <span className="resume-description-text">
-          • Minimizing bug-fix ticket turnaround by 75%, utilizing Winston npm and Mongo DB to log
-          errors to database.
+          • Maximize company meeting slots with proper code management, code modules and snippets,
+          to quickly edit demos; promotes simple/proactive debugging and refactoring.
         </span>
         <span className="resume-description-text">
-          • Maximizing company meeting slots by leveraging separated/organized/reusable code modules
-          and snippets, to quickly edit demos; promotes simple/proactive debugging and refactoring.
+          • Perform data analysis and integration by developing client portal equipped with data
+          visualization and employee access.
         </span>
         <span className="resume-description-text">
-          • Improving client customer UI/UX experience by collaborating with design team using
-          google meets/messaging.
-        </span>
-        <span className="resume-description-text">
-          • Integrating platform by developing an administrative client portal equipped with
-          dashboard UI, invoice/receipts, and employee access.
-        </span>
-        <span className="resume-description-text">
-          • Expediting release time by using Netlify/Heroku/Railway to deploy functional demos for
-          clients to preview.
+          • Design and deploy functional demos to clients using Netlify/Heroku/Railway
         </span>
       </div>
       <ResumeHeading
-        heading={'Entrepreneur'}
+        heading={'McCloud Lighting & Tech Solutions (MTS)'}
         subHeading={'Lighting Technician/Designer'}
         fromDate={'2013 '}
         toDate={' 2022'}
       />
       <div className="experience-description">
         <span className="resume-description-text">
-          • Reduced company maintenance expenses by 25% by maintaining / repairing equipment and
-          updating Rep plots/venue schematics.
+          • Scaled client organizational network, installed signal repeaters, and extended data
+          points, reducing tech install time and increasing technical rehearsal performance.
         </span>
         <span className="resume-description-text">
-          • Scaled organizational network, installed signal repeaters, and extended data points,
-          reducing tech install time and increasing technical rehearsal performance.
+          • Prevented technical interruptions and reduced equipment damage rate by troubleshooting
+          client electrical circuits, signal connections, lighting software and intelligent lighting
+          fixtures.
         </span>
         <span className="resume-description-text">
-          • Prevented interruptions and reduced damage rate by troubleshooting electrical circuits,
-          signal connections, lighting software and intelligent lighting fixtures.
+          • Analyzed client needs to prioritize and maximize client time slots.
         </span>
         <span className="resume-description-text">
           • Consulted potential clients on cost friendly and efficient equipment and options.
@@ -186,7 +181,7 @@ function Resume(props) {
       </div>
       <ResumeHeading
         heading={'Norwegian Cruise Line'}
-        subHeading={'Lighting Technician'}
+        subHeading={'Principal/Senior Lighting Technician'}
         fromDate={'2018 '}
         toDate={' 2020'}
       />
@@ -195,21 +190,12 @@ function Resume(props) {
           • Reduced company material expenses by 15%, conducting inventory on item lockers.
         </span>
         <span className="resume-description-text">
-          • Reduced technician errors and equipment damage by creating incoming technician handover
-          and technical documents. Documents increased technician autonomy and management
-          performance.
-        </span>
-        <span className="resume-description-text">
           • Advised and led technicians in troubleshooting, problem solving and programming within
           their venues, increasing technical functionality.
         </span>
         <span className="resume-description-text">
-          • Reduced damage and shutdown rate by troubleshooting electrical circuits, signal
-          connections, lighting software and intelligent lighting fixtures.
-        </span>
-        <span className="resume-description-text">
-          • Reduced company maintenance expenses by maintaining / repairing equipment and updating
-          Rep plots/venue schematics.
+          • Reduced damage and shutdown rate by analyzing and troubleshooting electrical circuits,
+          signal connections, lighting software and intelligent lighting fixtures.
         </span>
       </div>
     </div>,

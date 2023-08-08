@@ -17,26 +17,28 @@ function AboutMe(props) {
   const SCREEN_CONSTANTS = {
     description: (
       <p>
-        (JavaScript MERN) Full Stack Developer with 3 years of experience programming, coding,
-        building, and maintaining web applications. Relocating to and looking for roles in Dallas,
-        TX.
+        <strong>Web Application Development ~ Process Analysis ~ Data/Decision Analytics</strong>
         <br />
         <br />
-        My passion is in troubleshooting, executing tasks with precision, and giving meticulous
-        attention to detail, always prioritizing the right approach over shortcuts.
+        My passion is designing, developing, and maintaining web applications on all architectural
+        levels. Collaborate with product owners, stakeholders, and technical teams to ensure
+        solutions foster innovation, solve everyday challenges, and deliver client-oriented results.
         <br />
-        My goals are working with others to solve relevant daily issues, enhance any place I
-        encounter and ensure I leave the place better than how I initially found it.
+        Energetically work to enhance the customer’s User Interface/User Experience and decision
+        support capabilities; take ownership in carrying out troubleshooting and code refactoring
+        for improving application performance; manage backend databases; and look for ways to
+        continually learn, add value, and inspire other team members throughout the project
+        lifecycle.
       </p>
     ),
 
     highlights: {
       bullets: [
         '10 years of troubleshooting experience',
-        'Reduced company maintenance expenses by 25% by maintaining / repairing equipment and updating Rep plots/venue schematics',
-        'Reduced technician errors and equipment damage by creating incoming technician handover and technical documents. Documents increased technician autonomy and management performance',
-        `Reduced company material expenses by 15%, conducting inventory on item lockers`,
-        `Integrated platform by developing an administrative client portal equipped with dashboard UI, invoice/receipts, and employee access`,
+        'Reduce bug-fix ticket turn-around by 75%, utilizing code management and logging',
+        'Streamline application and database release cycle, expediting customer demo release times',
+        `Performed System updates to company rep plots and venue / system schematics, maintained / repaired equipment, reducing client maintenance expenses by 25%`,
+        `Reduced technician errors and equipment damage by creating incoming technician handover and technical documents. Documents increased technician autonomy and management performance`,
       ],
       heading: 'Here are a few highlights:',
     },
