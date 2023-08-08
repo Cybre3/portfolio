@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.71a1bed0.css",
-    "main.js": "/static/js/main.8f31b9d9.js",
+    "main.css": "/static/css/main.8b4fedc8.css",
+    "main.js": "/static/js/main.52def612.js",
     "static/media/RockClimbFace_resize.JPG": "/static/media/RockClimbFace_resize.37c430ba6f3048f485f8.JPG",
     "static/media/tailwindcss-logo.png": "/static/media/tailwindcss-logo.fdec46372df17366cc1c.png",
     "static/media/bg-1.jpg": "/static/media/bg-1.e7a118c397efc44bbf9e.jpg",
@@ -46,11 +46,11 @@
     "static/media/interests.svg": "/static/media/interests.311391e8b5ae1f2a7364.svg",
     "static/media/education.svg": "/static/media/education.9ed8b53812c3beb648e1.svg",
     "static/media/work-history.svg": "/static/media/work-history.f8127a79c81e4defe8bc.svg",
-    "main.71a1bed0.css.map": "/static/css/main.71a1bed0.css.map",
-    "main.8f31b9d9.js.map": "/static/js/main.8f31b9d9.js.map"
+    "main.8b4fedc8.css.map": "/static/css/main.8b4fedc8.css.map",
+    "main.52def612.js.map": "/static/js/main.52def612.js.map"
   },
   "entrypoints": [
-    "static/css/main.71a1bed0.css",
-    "static/js/main.8f31b9d9.js"
+    "static/css/main.8b4fedc8.css",
+    "static/js/main.52def612.js"
   ]
 }
