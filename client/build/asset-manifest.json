@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8b4fedc8.css",
-    "main.js": "/static/js/main.bafbca76.js",
+    "main.css": "/static/css/main.8e5af41c.css",
+    "main.js": "/static/js/main.4974f450.js",
     "static/media/RockClimbFace_resize.JPG": "/static/media/RockClimbFace_resize.37c430ba6f3048f485f8.JPG",
     "static/media/tailwindcss-logo.png": "/static/media/tailwindcss-logo.fdec46372df17366cc1c.png",
     "static/media/bg-1.jpg": "/static/media/bg-1.e7a118c397efc44bbf9e.jpg",
@@ -21,7 +21,7 @@
     "static/media/Poppins-ExtraBold.ttf": "/static/media/Poppins-ExtraBold.4ed78cd5d64af4efc3c7.ttf",
     "static/media/McCloudS_FullStack_Resume_2023_Updated.pdf.png": "/static/media/McCloudS_FullStack_Resume_2023_Updated.pdf.aeb8150a68375071c63d.png",
     "static/media/netlify-logo.png": "/static/media/netlify-logo.ccce58847f997c473352.png",
-    "static/media/McCloudS_FullStack_Resume_2023.png": "/static/media/McCloudS_FullStack_Resume_2023.54eba63f931a3a52c8a5.png",
+    "static/media/McCloudS_FullStack_Resume_2023.png": "/static/media/McCloudS_FullStack_Resume_2023.4770c0b69e3d2cb40f5b.png",
     "static/media/jquery-logo.png": "/static/media/jquery-logo.eb105fbbfb1112c72276.png",
     "static/media/react-logo.png": "/static/media/react-logo.e90a6f7c0d83b2748879.png",
     "static/media/bootstrap-logo.png": "/static/media/bootstrap-logo.36241e83375e5009aaeb.png",
@@ -45,11 +45,11 @@
     "static/media/interests.svg": "/static/media/interests.311391e8b5ae1f2a7364.svg",
     "static/media/education.svg": "/static/media/education.9ed8b53812c3beb648e1.svg",
     "static/media/work-history.svg": "/static/media/work-history.f8127a79c81e4defe8bc.svg",
-    "main.8b4fedc8.css.map": "/static/css/main.8b4fedc8.css.map",
-    "main.bafbca76.js.map": "/static/js/main.bafbca76.js.map"
+    "main.8e5af41c.css.map": "/static/css/main.8e5af41c.css.map",
+    "main.4974f450.js.map": "/static/js/main.4974f450.js.map"
   },
   "entrypoints": [
-    "static/css/main.8b4fedc8.css",
-    "static/js/main.bafbca76.js"
+    "static/css/main.8e5af41c.css",
+    "static/js/main.4974f450.js"
   ]
 }

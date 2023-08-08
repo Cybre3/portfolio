@@ -17,7 +17,7 @@ function AboutMe(props) {
   const SCREEN_CONSTANTS = {
     description: (
       <p>
-        <strong>Web Application Development ~ Process Analysis ~ Data/Decision Analytics</strong>
+        <strong className='text-center'>Web Application Development ~ Process Analysis ~ Data/Decision Analytics</strong>
         <br />
         <br />
         My passion is designing, developing, and maintaining web applications on all architectural
@@ -34,7 +34,7 @@ function AboutMe(props) {
 
     highlights: {
       bullets: [
-        '10 years of troubleshooting experience',
+        'A decade of troubleshooting experience',
         'Reduce bug-fix ticket turn-around by 75%, utilizing code management and logging',
         'Streamline application and database release cycle, expediting customer demo release times',
         `Performed System updates to company rep plots and venue / system schematics, maintained / repaired equipment, reducing client maintenance expenses by 25%`,
