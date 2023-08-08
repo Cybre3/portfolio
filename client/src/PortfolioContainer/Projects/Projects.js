@@ -12,7 +12,7 @@ import productSortAppPic from '../../assets/SmallCodeChallenges/ProductSorter-2.
 import wordManifestAppPic from '../../assets/SmallCodeChallenges/word-manifest.png'
 import forcastAppPic from '../../assets/SmallCodeChallenges/forecast.png'
 import fisherGmaeAppPic from '../../assets/SmallCodeChallenges/fisher-game.png'
-import ticTacToeAppPic from '../../assets/SmallCodeChallenges/tic-tac-toe.png'
+// import ticTacToeAppPic from '../../assets/SmallCodeChallenges/tic-tac-toe.png'
 
 import "./Projects.css";
 

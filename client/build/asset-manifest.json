@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8b4fedc8.css",
-    "main.js": "/static/js/main.52def612.js",
+    "main.js": "/static/js/main.8c57cc1a.js",
     "static/media/RockClimbFace_resize.JPG": "/static/media/RockClimbFace_resize.37c430ba6f3048f485f8.JPG",
     "static/media/tailwindcss-logo.png": "/static/media/tailwindcss-logo.fdec46372df17366cc1c.png",
     "static/media/bg-1.jpg": "/static/media/bg-1.e7a118c397efc44bbf9e.jpg",
@@ -37,7 +37,6 @@
     "static/media/redux-logo.png": "/static/media/redux-logo.1edba70acbe0a2484e24.png",
     "static/media/slack-logo.png": "/static/media/slack-logo.0c70ae08030483b5c6ff.png",
     "static/media/firebase-logo.png": "/static/media/firebase-logo.4f2ad6e09ee2a150f911.png",
-    "static/media/tic-tac-toe.png": "/static/media/tic-tac-toe.35591b4a3a766fc78d1d.png",
     "static/media/render-logo.png": "/static/media/render-logo.7343b2e2c09c75068371.png",
     "static/media/lodash-logo.png": "/static/media/lodash-logo.6a7829809288fb56a123.png",
     "index.html": "/index.html",
@@ -47,10 +46,10 @@
     "static/media/education.svg": "/static/media/education.9ed8b53812c3beb648e1.svg",
     "static/media/work-history.svg": "/static/media/work-history.f8127a79c81e4defe8bc.svg",
     "main.8b4fedc8.css.map": "/static/css/main.8b4fedc8.css.map",
-    "main.52def612.js.map": "/static/js/main.52def612.js.map"
+    "main.8c57cc1a.js.map": "/static/js/main.8c57cc1a.js.map"
   },
   "entrypoints": [
     "static/css/main.8b4fedc8.css",
-    "static/js/main.52def612.js"
+    "static/js/main.8c57cc1a.js"
   ]
 }
