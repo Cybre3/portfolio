@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import ScrollService from "../../../utilities/ScrollService";
-import TypicalProfile from "../../../utilities/Typical_Profile";
-import "./Profile.css";
+import ScrollService from '../../../utilities/ScrollService';
+import TypicalProfile from '../../../utilities/Typical_Profile';
+import './Profile.css';
 
 function Profile(props) {
   return (
@@ -56,6 +56,9 @@ function Profile(props) {
             >
               <button className="btn highlighted-btn">Get Resume</button>
             </a>
+            <div className='game-view-btn'>
+              <a href="https://starrika-mccloud-game-menus.netlify.app/">Gaming View Experience</a>
+            </div>
           </div>
         </div>
       </div>
