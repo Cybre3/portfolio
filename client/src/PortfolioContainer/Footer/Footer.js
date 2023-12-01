@@ -6,17 +6,9 @@ import './Footer.css';
 
 
 const projects = [
-  {
-    title: 'React Demo Tic-Tac-Toe',
-    link: 'https://demo-react-tic-tac-toe-demo.netlify.app/',
-  },
   { title: 'Product Sorter', link: 'https://product-sorter.netlify.app/' },
-  { title: 'Forecast', link: 'https://rapidapi-forecast.herokuapp.com/' },
-  { title: 'Word Manifest', link: 'https://word-manifest.netlify.app/' },
-  {
-    title: 'Fisher Catches',
-    link: 'https://my-fisher-catches.herokuapp.com/',
-  },
+  { title: 'ParkMe Valet', link: 'https://parkme-valet.netlify.app/' },
+  { title: 'Password Generator', link: 'https://password-generator-vanillajs.netlify.app/' },
   /*  {
     title: 'Wiki Blog',
     githubCode: 'https://github.com/Cybre3/KingsWikiApp',
