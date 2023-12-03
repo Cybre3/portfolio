@@ -9,6 +9,7 @@ const projects = [
   { title: 'Product Sorter', link: 'https://product-sorter.netlify.app/' },
   { title: 'ParkMe Valet', link: 'https://parkme-valet.netlify.app/' },
   { title: 'Password Generator', link: 'https://password-generator-vanillajs.netlify.app/' },
+  { title: 'Secret Santa App', link: 'https://family-secret-santa-app.netlify.app/' },
   /*  {
     title: 'Wiki Blog',
     githubCode: 'https://github.com/Cybre3/KingsWikiApp',

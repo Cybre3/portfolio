@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e5af41c.css",
-    "main.js": "/static/js/main.4974f450.js",
+    "main.css": "/static/css/main.e8fb6b9a.css",
+    "main.js": "/static/js/main.f52f96cb.js",
     "static/media/RockClimbFace_resize.JPG": "/static/media/RockClimbFace_resize.37c430ba6f3048f485f8.JPG",
     "static/media/tailwindcss-logo.png": "/static/media/tailwindcss-logo.fdec46372df17366cc1c.png",
     "static/media/bg-1.jpg": "/static/media/bg-1.e7a118c397efc44bbf9e.jpg",
@@ -25,12 +25,12 @@
     "static/media/jquery-logo.png": "/static/media/jquery-logo.eb105fbbfb1112c72276.png",
     "static/media/react-logo.png": "/static/media/react-logo.e90a6f7c0d83b2748879.png",
     "static/media/bootstrap-logo.png": "/static/media/bootstrap-logo.36241e83375e5009aaeb.png",
-    "static/media/forecast.png": "/static/media/forecast.1250c0a99746d93215a1.png",
-    "static/media/word-manifest.png": "/static/media/word-manifest.8d8979c17b3073dafacb.png",
-    "static/media/fisher-game.png": "/static/media/fisher-game.5cdccff5db3ae9d5b216.png",
+    "static/media/parkme-valet-pic.png": "/static/media/parkme-valet-pic.3bdf69f9553474e29118.png",
+    "static/media/secret-santa-pic.png": "/static/media/secret-santa-pic.847630cffd979db642d4.png",
     "static/media/vscode-logo.png": "/static/media/vscode-logo.77e57f0612a376320b24.png",
     "static/media/heroku-logo.png": "/static/media/heroku-logo.94248306637d622c2201.png",
     "static/media/ProductSorter-2.0.png": "/static/media/ProductSorter-2.0.bbd1c65d9da2053a36ce.png",
+    "static/media/password-generator-pic.png": "/static/media/password-generator-pic.651e5d9965e4c9b361e8.png",
     "static/media/expressjs-logo.png": "/static/media/expressjs-logo.cca64e0f360897258ecb.png",
     "static/media/nodejs-logo.png": "/static/media/nodejs-logo.85fedea58efe86438f00.png",
     "static/media/mongodb-logo.png": "/static/media/mongodb-logo.b471ef6b639af9255e05.png",
@@ -45,11 +45,11 @@
     "static/media/interests.svg": "/static/media/interests.311391e8b5ae1f2a7364.svg",
     "static/media/education.svg": "/static/media/education.9ed8b53812c3beb648e1.svg",
     "static/media/work-history.svg": "/static/media/work-history.f8127a79c81e4defe8bc.svg",
-    "main.8e5af41c.css.map": "/static/css/main.8e5af41c.css.map",
-    "main.4974f450.js.map": "/static/js/main.4974f450.js.map"
+    "main.e8fb6b9a.css.map": "/static/css/main.e8fb6b9a.css.map",
+    "main.f52f96cb.js.map": "/static/js/main.f52f96cb.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e5af41c.css",
-    "static/js/main.4974f450.js"
+    "static/css/main.e8fb6b9a.css",
+    "static/js/main.f52f96cb.js"
   ]
 }

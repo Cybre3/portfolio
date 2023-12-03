@@ -11,6 +11,7 @@ import CardSCC from './CardSCC';
 import productSortAppPic from '../../assets/SmallCodeChallenges/ProductSorter-2.0.png';
 import passwordGenAppPic from '../../assets/SmallCodeChallenges/password-generator-pic.png';
 import parkMeValetAppPic from '../../assets/SmallCodeChallenges/parkme-valet-pic.png';
+import secretSantaPic from '../../assets/SmallCodeChallenges/secret-santa-pic.png'
 
 import './Projects.css';
 
@@ -60,6 +61,11 @@ function Projects(props) {
       title: 'ParkMe Valet App',
       src: parkMeValetAppPic,
       link: 'https://parkme-valet.netlify.app/',
+    },
+    {
+      title: 'Secret Santa App',
+      src: secretSantaPic,
+      link: 'https://family-secret-santa-app.netlify.app/',
     },
   ];
 
